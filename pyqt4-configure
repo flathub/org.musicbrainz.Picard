@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+python2 configure.py \
+    --confirm-license \
+    --no-designer-plugin \
+    --no-docstrings \
+    --no-qsci-api \
+    --bindir=/app/bin \
+    --destdir=/app/lib/python2.7/site-packages \
+    --sipdir=/app/share/sip

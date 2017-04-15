@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <id type="desktop">picard.desktop</id>
+  <name>Picard</name>
+  <summary>MusicBrainz's music tagger</summary>
+  <description>
+    <p>
+      Tag your music with the next generation MusicBrainz tagger.
+    </p>
+  </description>
+  <url type="homepage">https://picard.musicbrainz.org/</url>
+  <screenshots>
+    <screenshot type="default">https://www.daitauha.fr/static/screenshots/picard/main.png</screenshot>
+  </screenshots>
+  <project_license>GPL-2.0+</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <!-- FIXME: change this to an upstream email address for spec updates
+  <update_contact>someone_who_cares@upstream_project.org</update_contact>
+  -->
+</application>

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+python2 configure.py \
+    --bindir=/app/bin \
+    --destdir=/app/lib/python2.7/site-packages \
+    --incdir=/app/include \
+    --pyidir=/app/lib/python2.7/site-packages \
+    --sipdir=/app/share/sip

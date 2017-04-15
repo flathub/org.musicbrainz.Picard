@@ -1,0 +1,275 @@
+{
+    "id": "org.musicbrainz.Picard",
+    "version": "1.4.1",
+    "branch": "stable",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "1.6",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "picard",
+    "rename-desktop-file": "picard.desktop",
+    "rename-icon": "picard",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--share=network",
+        "--filesystem=home",
+        "--talk-name=org.gnome.GConf"
+    ],
+    "modules": [
+        {
+            "name": "qt4",
+            "config-opts": [
+                "-confirm-license",
+                "-opensource",
+                "-release",
+                "-shared",
+                "-no-static",
+                "-fast",
+                "-datadir", "/app/lib/qt4",
+                "-importdir", "/app/lib/qt4/imports",
+                "-plugindir", "/app/lib/qt4/plugins",
+                "-translationdir", "/app/share/qt4/translations",
+                "-accessibility",
+                "-exceptions",
+                "-fontconfig",
+                "-glib",
+                "-dbus-linked",
+                "-openssl-linked",
+                "-optimized-qmake",
+                "-system-libjpeg",
+                "-system-libpng",
+                "-system-libtiff",
+                "-system-proxies",
+                "-system-zlib",
+                "-no-cups",
+                "-no-declarative",
+                "-no-gtkstyle",
+                "-no-javascript-jit",
+                "-no-libmng",
+                "-no-multimedia",
+                "-no-nis",
+                "-no-opengl",
+                "-no-phonon",
+                "-no-phonon-backend",
+                "-no-qt3support",
+                "-no-rpath",
+                "-no-script",
+                "-no-scripttools",
+                "-no-sql-db2",
+                "-no-sql-ibase",
+                "-no-sql-mysql",
+                "-no-sql-oci",
+                "-no-sql-odbc",
+                "-no-sql-psql",
+                "-no-sql-sqlite",
+                "-no-sql-sqlite2",
+                "-no-sql-sqlite_symbian",
+                "-no-sql-symsql",
+                "-no-sql-tds",
+                "-no-svg",
+                "-no-webkit",
+                "-no-xmlpatterns",
+                "-nomake", "demos",
+                "-nomake", "docs",
+                "-nomake", "examples"
+            ],
+            "build-options": {
+                "env": {
+                    "CXXFLAGS": "-std=gnu++98",
+                    "LD_LIBRARY_PATH": "/run/build/qt4/lib/"
+                }
+            },
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/4.8/4.8.7/qt-everywhere-opensource-src-4.8.7.tar.gz",
+                    "sha256": "e2882295097e47fe089f8ac741a95fef47e0a73a3f3cdf21b56990638f626ea0"
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/include",
+                "/lib/*.a",
+                "/lib/*.la",
+                "/lib/*.prl",
+                "/lib/pkgconfig",
+                "/lib/qt4/mkspecs",
+                "/lib/qt4/q3porting.xml"
+            ]
+        },
+        {
+            "name": "sip",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://downloads.sourceforge.net/pyqt/sip-4.19.1.tar.gz",
+                    "sha256": "501852b8325349031b769d1c03d6eab04f7b9b97f790ec79f3d3d04bf065d83e"
+                },
+                {
+                    "type": "file",
+                    "path": "sip-configure",
+                    "dest-filename": "configure"
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/include"
+            ]
+        },
+        {
+            "name": "pyqt4",
+            "config-opts": [
+                "--confirm-license",
+                "--no-designer-plugin",
+                "--no-docstrings",
+                "--no-qsci-api"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://downloads.sourceforge.net/pyqt/PyQt4_gpl_x11-4.12.tar.gz",
+                    "sha256": "3c1d4b55314adb3e1132de8fc2a92eed216d37e58aceed41294dbca210ca88db"
+                },
+                {
+                    "type": "file",
+                    "path": "pyqt4-configure",
+                    "dest-filename": "configure"
+                }
+            ],
+            "cleanup": [
+                "/bin"
+            ]
+        },
+        {
+            "name": "yasm",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz",
+                    "sha256": "3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f"
+                }
+            ],
+            "cleanup": [
+                "*"
+            ]
+        },
+        {
+            "name": "ffmpeg",
+            "config-opts": [
+                "--enable-shared",
+                "--disable-static",
+                "--disable-doc",
+                "--enable-gpl",
+                "--enable-version3",
+                "--disable-nonfree",
+                "--enable-optimizations",
+                "--enable-pthreads",
+
+                "--disable-bzlib",
+                "--disable-libgsm",
+                "--enable-libvorbis",
+                "--disable-x11grab",
+                "--enable-zlib",
+                "--disable-libxcb",
+                "--disable-lzma",
+
+                "--disable-programs",
+                "--disable-network",
+
+                "--disable-protocols",
+                "--enable-protocol=file",
+
+                "--disable-devices",
+
+                "--disable-muxers",
+
+                "--disable-demuxers",
+                "--enable-demuxer=flac",
+                "--enable-demuxer=mp3",
+                "--enable-demuxer=ogg",
+
+                "--disable-parsers",
+                "--enable-parser=flac",
+                "--enable-parser=vorbis",
+
+                "--disable-encoders",
+
+                "--disable-decoders",
+                "--enable-decoder=flac",
+                "--enable-decoder=libvorbis",
+                "--enable-decoder=mp3"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://ffmpeg.org/releases/ffmpeg-3.1.7.tar.bz2",
+                    "sha256": "7482e0e63f5b4167b51192611eda42023e3729677b74a9c1a65af1910922ae51"
+                }
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ]
+        },
+        {
+            "name": "chromaprint",
+            "cmake": true,
+            "builddir": true,
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE:STRING=Release",
+                "-DBUILD_EXAMPLES:BOOL=ON"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/acoustid/chromaprint/releases/download/v1.4.2/chromaprint-1.4.2.tar.gz",
+                    "sha256": "989609a7e841dd75b34ee793bd1d049ce99a8f0d444b3cea39d57c3e5d26b4d4"
+                }
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ]
+        },
+        {
+            "name": "mutagen",
+            "buildsystem": "simple",
+            "build-commands": [
+                "python2 setup.py install --prefix=/app"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://pypi.python.org/packages/14/d5/51f49f345d4490a9a6a04677ab136f78e4e0c64ed142e48b4ed818c13c96/mutagen-1.37.tar.gz",
+                    "sha256": "539553d3f1ffd890c74f64b819750aef0316933d162c09798c9e7eaf334ae760"
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/man"
+            ]
+        },
+        {
+            "name": "picard",
+            "buildsystem": "simple",
+            "build-commands": [
+                "python2 setup.py install --prefix=/app"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://ftp.musicbrainz.org/pub/musicbrainz/picard/picard-1.4.1.tar.gz", /* No HTTPS */
+                    "sha256": "994c7f835e1adbd7905e88af841ee6e7c249dc75b8be9963b1b3dc6cb8de6a4a"
+                },
+                {
+                    "type": "file",
+                    "path": "org.musicbrainz.Picard.appdata.xml"
+                }
+            ],
+            "post-install": [
+                "mkdir -p /app/share/appdata",
+                "install -m644 -p org.musicbrainz.Picard.appdata.xml /app/share/appdata/"
+            ]
+        }
+    ]
+}
