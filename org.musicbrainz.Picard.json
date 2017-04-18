@@ -75,6 +75,13 @@
                 "-nomake", "examples"
             ],
             "build-options": {
+                "arch" : {
+                    "arm" : {
+                        "config-opts" : [
+                            "-arch", "arm"
+                        ]
+                    }
+                },
                 "env": {
                     "CXXFLAGS": "-std=gnu++98",
                     "LD_LIBRARY_PATH": "/run/build/qt4/lib/"
