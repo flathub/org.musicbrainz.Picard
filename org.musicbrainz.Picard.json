@@ -19,6 +19,7 @@
         {
             "name": "qt4",
             "config-opts": [
+                "-verbose",
                 "-confirm-license",
                 "-opensource",
                 "-release",
