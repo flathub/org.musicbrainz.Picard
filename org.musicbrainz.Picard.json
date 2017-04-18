@@ -80,6 +80,11 @@
                         "config-opts" : [
                             "-arch", "arm"
                         ]
+                    },
+                    "i386" : {
+                        "config-opts" : [
+                            "-arch", "i386"
+                        ]
                     }
                 },
                 "env": {
