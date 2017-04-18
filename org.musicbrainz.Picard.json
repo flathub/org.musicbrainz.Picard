@@ -123,7 +123,7 @@
             "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE:STRING=Release",
-                "-DBUILD_EXAMPLES:BOOL=ON"
+                "-DBUILD_TOOLS:BOOL=ON"
             ],
             "sources": [
                 {
