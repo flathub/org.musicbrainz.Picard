@@ -163,8 +163,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.musicbrainz.org/pub/musicbrainz/picard/picard-1.4.1.tar.gz", /* No HTTPS */
-                    "sha256": "994c7f835e1adbd7905e88af841ee6e7c249dc75b8be9963b1b3dc6cb8de6a4a"
+                    "url": "http://ftp.musicbrainz.org/pub/musicbrainz/picard/picard-1.4.2.tar.gz", /* No HTTPS */
+                    "sha256": "f0adee3877bbd66c827a43b57dd2233037b99f6ebfdc1700b26cb9d400992234"
                 },
                 {
                     "type": "file",
