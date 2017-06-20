@@ -145,8 +145,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://pypi.python.org/packages/14/d5/51f49f345d4490a9a6a04677ab136f78e4e0c64ed142e48b4ed818c13c96/mutagen-1.37.tar.gz",
-                    "sha256": "539553d3f1ffd890c74f64b819750aef0316933d162c09798c9e7eaf334ae760"
+                    "url": "https://files.pythonhosted.org/packages/57/ec/d7534cdb2766f1fee534a3aabdbdfbf05d6cf77cde617d77b526336a1a72/mutagen-1.38.tar.gz",
+                    "sha256": "23990f70ae678c7b8df3fd59e2adbefa5fe392c36da8c71d2254b21c6cd78766"
                 }
             ],
             "cleanup": [
