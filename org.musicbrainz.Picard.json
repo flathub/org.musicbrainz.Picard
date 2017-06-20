@@ -107,8 +107,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ffmpeg.org/releases/ffmpeg-3.1.7.tar.bz2",
-                    "sha256": "7482e0e63f5b4167b51192611eda42023e3729677b74a9c1a65af1910922ae51"
+                    "url": "https://ffmpeg.org/releases/ffmpeg-3.1.8.tar.bz2",
+                    "sha256": "4772e833e1c8c70dfc487383a56198d5ea0579ca728cca92829aa68021f971fe"
                 }
             ],
             "cleanup": [
