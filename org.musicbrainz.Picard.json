@@ -1,6 +1,5 @@
 {
     "id": "org.musicbrainz.Picard",
-    "version": "1.4.1",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "1.6",
     "sdk": "org.freedesktop.Sdk",
