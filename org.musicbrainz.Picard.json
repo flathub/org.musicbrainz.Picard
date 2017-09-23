@@ -11,6 +11,7 @@
         "--socket=x11",
         "--share=network",
         "--filesystem=home",
+        "--filesystem=xdg-music",
         "--talk-name=org.gnome.GConf"
     ],
     "modules": [
