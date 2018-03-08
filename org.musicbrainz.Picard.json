@@ -21,8 +21,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/pyqt/sip-4.19.1.tar.gz",
-                    "sha256": "501852b8325349031b769d1c03d6eab04f7b9b97f790ec79f3d3d04bf065d83e"
+                    "url": "https://downloads.sourceforge.net/pyqt/sip-4.19.8.tar.gz",
+                    "sha256": "7eaf7a2ea7d4d38a56dd6d2506574464bddf7cf284c960801679942377c297bc"
                 },
                 {
                     "type": "file",
@@ -46,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/pyqt/PyQt4_gpl_x11-4.12.tar.gz",
-                    "sha256": "3c1d4b55314adb3e1132de8fc2a92eed216d37e58aceed41294dbca210ca88db"
+                    "url": "https://downloads.sourceforge.net/pyqt/PyQt4_gpl_x11-4.12.1.tar.gz",
+                    "sha256": "45d724461ae58b019b9be95076ca07e212eb73084aec9125bb254825c3a05383"
                 },
                 {
                     "type": "file",
@@ -74,7 +74,6 @@
                 "--disable-bzlib",
                 "--disable-libgsm",
                 "--enable-libvorbis",
-                "--disable-x11grab",
                 "--enable-zlib",
                 "--disable-libxcb",
                 "--disable-lzma",
@@ -108,8 +107,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ffmpeg.org/releases/ffmpeg-3.1.8.tar.bz2",
-                    "sha256": "4772e833e1c8c70dfc487383a56198d5ea0579ca728cca92829aa68021f971fe"
+                    "url": "https://ffmpeg.org/releases/ffmpeg-3.4.2.tar.xz",
+                    "sha256": "2b92e9578ef8b3e49eeab229e69305f5f4cbc1fdaa22e927fc7fca18acccd740"
                 }
             ],
             "cleanup": [
@@ -128,8 +127,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/acoustid/chromaprint/releases/download/v1.4.2/chromaprint-1.4.2.tar.gz",
-                    "sha256": "989609a7e841dd75b34ee793bd1d049ce99a8f0d444b3cea39d57c3e5d26b4d4"
+                    "url": "https://github.com/acoustid/chromaprint/releases/download/v1.4.3/chromaprint-1.4.3.tar.gz",
+                    "sha256": "ea18608b76fb88e0203b7d3e1833fb125ce9bb61efe22c6e169a50c52c457f82"
                 }
             ],
             "cleanup": [
@@ -146,8 +145,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/57/ec/d7534cdb2766f1fee534a3aabdbdfbf05d6cf77cde617d77b526336a1a72/mutagen-1.38.tar.gz",
-                    "sha256": "23990f70ae678c7b8df3fd59e2adbefa5fe392c36da8c71d2254b21c6cd78766"
+                    "url": "https://files.pythonhosted.org/packages/2c/6a/0b2caf9364db074b616b1b8c26ce7166a883c21b0e40bd50f6db02307afe/mutagen-1.40.0.tar.gz",
+                    "sha256": "b2a2c2ce87863af12ed7896f341419cd051a3c72c3c6733db9e83060dcadee5e"
                 }
             ],
             "cleanup": [
