@@ -1,11 +1,15 @@
 #!/bin/sh
 
 
-python2 configure.py \
+PYTHON=python2
+PYTHON_VERSION=$(${PYTHON} -c 'import sys; print(sys.version[:3])')
+
+
+${PYTHON} configure.py \
     --confirm-license \
     --no-designer-plugin \
     --no-docstrings \
     --no-qsci-api \
     --bindir=/app/bin \
-    --destdir=/app/lib/python2.7/site-packages \
+    --destdir=/app/lib/python${PYTHON_VERSION}/site-packages \
     --sipdir=/app/share/sip
