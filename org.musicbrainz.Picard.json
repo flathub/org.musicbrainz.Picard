@@ -37,7 +37,7 @@
             ]
         },
         {
-            "name": "pyqt4",
+            "name": "pyqt",
             "sources": [
                 {
                     "type": "archive",
@@ -47,7 +47,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "pyqt4-configure",
+                    "path": "pyqt-configure",
                     "dest-filename": "configure"
                 }
             ],
