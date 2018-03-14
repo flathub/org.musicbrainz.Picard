@@ -38,12 +38,6 @@
         },
         {
             "name": "pyqt4",
-            "config-opts": [
-                "--confirm-license",
-                "--no-designer-plugin",
-                "--no-docstrings",
-                "--no-qsci-api"
-            ],
             "sources": [
                 {
                     "type": "archive",
