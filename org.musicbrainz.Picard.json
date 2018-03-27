@@ -133,6 +133,54 @@
             ]
         },
         {
+            "name": "libdiscid",
+            "config-opts": [
+                "--disable-static"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://ftp.musicbrainz.org/pub/musicbrainz/libdiscid/libdiscid-0.6.2.tar.gz", /* No HTTPS */
+                    "sha256": "f9e443ac4c0dd4819c2841fcc82169a46fb9a626352cdb9c7f65dd3624cd31b9"
+                }
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ]
+        },
+        {
+            "name": "python-pkgconfig",
+            "buildsystem": "simple",
+            "build-commands": [
+                "python2 setup.py install --prefix=/app"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/p/pkgconfig/pkgconfig-1.3.1.tar.gz",
+                    "sha256": "0bc77e955a5990b466b7277234a88dc6a62f1f4388ac1e95469051c82a17fd80"
+                }
+            ]
+        },
+        {
+            "name": "python-libdiscid",
+            "buildsystem": "simple",
+            "build-commands": [
+                "python2 setup.py install --prefix=/app"
+            ],
+            "ensure-writable": [
+                "/lib/python2.7/site-packages/easy-install.pth"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/p/python-libdiscid/python-libdiscid-1.0.tar.gz",
+                    "sha256": "9b8203ac5e36116df430a4808f6552d59e38b458d53ba59aee31dbfaf366d311"
+                }
+            ]
+        },
+        {
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
