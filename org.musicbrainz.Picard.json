@@ -37,13 +37,7 @@
             ]
         },
         {
-            "name": "pyqt4",
-            "config-opts": [
-                "--confirm-license",
-                "--no-designer-plugin",
-                "--no-docstrings",
-                "--no-qsci-api"
-            ],
+            "name": "pyqt",
             "sources": [
                 {
                     "type": "archive",
@@ -53,7 +47,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "pyqt4-configure",
+                    "path": "pyqt-configure",
                     "dest-filename": "configure"
                 }
             ],
