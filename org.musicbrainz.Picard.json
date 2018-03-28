@@ -10,6 +10,7 @@
         "--share=ipc",
         "--socket=x11",
         "--share=network",
+        "--device=all",
         "--filesystem=home",
         "--filesystem=xdg-music",
         "--talk-name=org.gnome.GConf"
