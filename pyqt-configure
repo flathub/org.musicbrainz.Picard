@@ -1,18 +1,18 @@
 #!/bin/sh
 
-
-PYTHON=python2
-PYTHON_VERSION=$(${PYTHON} -c 'import sys; print(sys.version[:3])')
-
-
 ${PYTHON} configure.py \
+    --assume-shared \
+    --concatenate \
     --confirm-license \
     --enable=QtCore \
     --enable=QtGui \
     --enable=QtNetwork \
+    --enable=QtWidgets \
     --no-designer-plugin \
     --no-docstrings \
+    --no-qml-plugin \
     --no-qsci-api \
-    --bindir=/app/bin \
-    --destdir=/app/lib/python${PYTHON_VERSION}/site-packages \
-    --sipdir=/app/share/sip
+    --no-sip-files \
+    --no-stubs \
+    --no-tools \
+    --sysroot=/app

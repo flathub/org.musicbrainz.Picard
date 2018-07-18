@@ -1,30 +1,38 @@
 {
     "id": "org.musicbrainz.Picard",
-    "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
-    "sdk": "org.freedesktop.Sdk",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.10",
+    "sdk": "org.kde.Sdk",
     "command": "picard",
     "rename-desktop-file": "picard.desktop",
     "rename-icon": "picard",
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
+        "--socket=wayland",
         "--share=network",
         "--device=all",
         "--filesystem=home",
-        "--filesystem=xdg-music",
-        "--talk-name=org.gnome.GConf"
+        "--filesystem=xdg-music"
     ],
+    "build-options": {
+        "cflags": "-O2 -g -pipe -fstack-protector-strong -D_FORTIFY_SOURCE=2",
+        "cxxflags": "-O2 -g -pipe -fstack-protector-strong -D_FORTIFY_SOURCE=2",
+        "ldflags": "-fstack-protector-strong -Wl,-z,relro,-z,now",
+        "env": {
+            "PYTHON": "/usr/bin/python3",
+            "PIP": "/usr/bin/pip3"
+        }
+    },	
     "modules": [
-        "shared-modules/qt4/qt4-4.8.7-minimal.json",
         {
             "name": "sip",
             "sources": [
                 {
                     "type": "archive",
                     /* Sourceforge URLs fail intermitently, get the tarballs from Fedora, check the upstream hashes */
-                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/sip/sip-4.19.8.tar.gz/sha512/9c0a9722a9a9dd23e2eabe751d622cdd31b376b7987b2c991f5ef4a8d11853c5c6e9f1c24a0d2d864d3990e2a45c2a159ca8511efd4a7e156a14937ef3c680f7/sip-4.19.8.tar.gz",
-                    "sha256": "7eaf7a2ea7d4d38a56dd6d2506574464bddf7cf284c960801679942377c297bc"
+                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/sip/sip-4.19.12.tar.gz/sha512/9b9680172357aaf4a1ebc3bf1f4d2badaaa8643e50665fed6e17d27283a499ceac56c4f1db190de4d9516c8f0f794159485cc6f8fd68daafcbe1ccac85161972/sip-4.19.12.tar.gz",
+                    "sha256": "24617fc31b983df075500ecac0e99d2fb48bf63ba82d4a17518659e571923822"
                 },
                 {
                     "type": "file",
@@ -43,8 +51,8 @@
                 {
                     "type": "archive",
                     /* Sourceforge URLs fail intermitently, get the tarballs from Fedora, check the upstream hashes */
-                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/PyQt4/PyQt4_gpl_x11-4.12.1.tar.gz/sha512/0651816ed5a371c24827e182eac5b2a2afe67928d95a09f63bd8158117aacd3e835b1efa06d4fc0c147a28038613a5bc088bd736a1348de68199da7952299af1/PyQt4_gpl_x11-4.12.1.tar.gz",
-                    "sha256": "45d724461ae58b019b9be95076ca07e212eb73084aec9125bb254825c3a05383"
+                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/python-qt5/PyQt5_gpl-5.10.1.tar.gz/sha512/04cd0292f7a088f9c0d088d7c73ec96cfc40253f771dfdf194eb92be7635e6fcaf04863fa24215e9c34a096658549bb2feeb8d8fdca1e39ed87f0256ef0f790b/PyQt5_gpl-5.10.1.tar.gz",
+                    "sha256": "9932e971e825ece4ea08f84ad95017837fa8f3f29c6b0496985fa1093661e9ef"
                 },
                 {
                     "type": "file",
@@ -109,13 +117,16 @@
                 }
             ],
             "cleanup": [
+                "/lib/*.so",
                 "/include",
-                "/lib/pkgconfig"
+                "/lib/pkgconfig",
+                "/share/ffmpeg/examples",
+                "/share/ffmpeg"
             ]
         },
         {
             "name": "chromaprint",
-            "cmake": true,
+            "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE:STRING=Release",
@@ -154,7 +165,7 @@
             "name": "python-pkgconfig",
             "buildsystem": "simple",
             "build-commands": [
-                "python2 setup.py install --prefix=/app"
+                "${PIP} install --no-deps --prefix=/app ."
             ],
             "sources": [
                 {
@@ -168,10 +179,7 @@
             "name": "python-libdiscid",
             "buildsystem": "simple",
             "build-commands": [
-                "python2 setup.py install --prefix=/app"
-            ],
-            "ensure-writable": [
-                "/lib/python2.7/site-packages/easy-install.pth"
+                "${PIP} install --no-deps --prefix=/app ."
             ],
             "sources": [
                 {
@@ -185,7 +193,7 @@
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
-                "python2 setup.py install --prefix=/app"
+                "${PIP} install --no-deps --prefix=/app ."
             ],
             "sources": [
                 {
@@ -203,13 +211,13 @@
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "python2 setup.py install --prefix=/app"
+                "${PIP} install --egg --no-deps --prefix=/app ."
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.musicbrainz.org/pub/musicbrainz/picard/picard-1.4.2.tar.gz", /* No HTTPS */
-                    "sha256": "f0adee3877bbd66c827a43b57dd2233037b99f6ebfdc1700b26cb9d400992234"
+                    "url": "https://github.com/metabrainz/picard/archive/release-2.0.0.tar.gz",
+                    "sha256": "9607146f75c5ba56298062ae063db3c77ff107d0196fb21bd58eaf2e2f843054"
                 },
                 {
                     "type": "file",
