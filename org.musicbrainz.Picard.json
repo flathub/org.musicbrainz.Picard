@@ -216,8 +216,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.musicbrainz.org/pub/musicbrainz/picard/picard-2.0.1.tar.gz", /* No HTTPS */
-                    "sha256": "28498c34700d6140e6ac05199cc32fef6e46b77fd2ec31f151dd9213fa01ea24"
+                    "url": "http://ftp.musicbrainz.org/pub/musicbrainz/picard/picard-2.0.2.tar.gz", /* No HTTPS */
+                    "sha256": "9f9a46a8c4ce78516b60b97e97bc1ea787c99b13f44d5c575132825447b7ec5d"
                 },
                 {
                     "type": "file",
