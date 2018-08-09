@@ -9,7 +9,6 @@ ${PYTHON} configure.py \
     --enable=QtNetwork \
     --enable=QtWidgets \
     --no-designer-plugin \
-    --no-dist-info \
     --no-docstrings \
     --no-qml-plugin \
     --no-qsci-api \

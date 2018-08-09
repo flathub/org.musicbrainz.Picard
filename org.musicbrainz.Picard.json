@@ -51,17 +51,13 @@
                 {
                     "type": "archive",
                     /* Sourceforge URLs fail intermitently, get the tarballs from Fedora, check the upstream hashes */
-                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/python-qt5/PyQt5_gpl-5.11.2.tar.gz/sha512/fc60246b5e1ca0d8aeef829fe20de9dd28b77e3c151532f9dbcd92c0deec12d8308cc799901aeec3f84af745e735053d2aaad2866ef64a2426cba343e08bc2c0/PyQt5_gpl-5.11.2.tar.gz",
-                    "sha256": "7caa581155c3433716b7e6aba71fe1378cd7d92f4155c266d60e5cffb64e9603"
+                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/python-qt5/PyQt5_gpl-5.10.1.tar.gz/sha512/04cd0292f7a088f9c0d088d7c73ec96cfc40253f771dfdf194eb92be7635e6fcaf04863fa24215e9c34a096658549bb2feeb8d8fdca1e39ed87f0256ef0f790b/PyQt5_gpl-5.10.1.tar.gz",
+                    "sha256": "9932e971e825ece4ea08f84ad95017837fa8f3f29c6b0496985fa1093661e9ef"
                 },
                 {
                     "type": "file",
                     "path": "pyqt-configure",
                     "dest-filename": "configure"
-                },
-                {
-                    "type": "patch",
-                    "path": "pyqt-configure.py-make-check-for-PyQt5.sip-module-non-fat.patch"
                 }
             ],
             "cleanup": [

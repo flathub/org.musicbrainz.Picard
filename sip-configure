@@ -8,5 +8,4 @@ ${PYTHON} configure.py \
     --destdir=/app/lib/python${PYTHON_VERSION}/site-packages \
     --incdir=/app/include \
     --pyidir=/app/lib/python${PYTHON_VERSION}/site-packages \
-    --sipdir=/app/share/sip \
-    --sip-module=PyQt5.sip
+    --sipdir=/app/share/sip
