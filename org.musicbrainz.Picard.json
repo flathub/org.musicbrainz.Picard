@@ -31,8 +31,8 @@
                 {
                     "type": "archive",
                     /* Sourceforge URLs fail intermitently, get the tarballs from Fedora, check the upstream hashes */
-                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/sip/sip-4.19.12.tar.gz/sha512/9b9680172357aaf4a1ebc3bf1f4d2badaaa8643e50665fed6e17d27283a499ceac56c4f1db190de4d9516c8f0f794159485cc6f8fd68daafcbe1ccac85161972/sip-4.19.12.tar.gz",
-                    "sha256": "24617fc31b983df075500ecac0e99d2fb48bf63ba82d4a17518659e571923822"
+                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/sip/sip-4.19.13.tar.gz/sha512/eb456e1f7efa463f859047acc5301e19279e1627629d0bad3ac7a0a52b77575126bc3f2c64bb4278ae11d415c13d2731dfc8c816bba71307173d393a414aae98/sip-4.19.13.tar.gz",
+                    "sha256": "e353a7056599bf5fbd5d3ff9842a6ab2ea3cf4e0304a0f925ec5862907c0d15e"
                 },
                 {
                     "type": "file",
@@ -51,8 +51,8 @@
                 {
                     "type": "archive",
                     /* Sourceforge URLs fail intermitently, get the tarballs from Fedora, check the upstream hashes */
-                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/python-qt5/PyQt5_gpl-5.10.1.tar.gz/sha512/04cd0292f7a088f9c0d088d7c73ec96cfc40253f771dfdf194eb92be7635e6fcaf04863fa24215e9c34a096658549bb2feeb8d8fdca1e39ed87f0256ef0f790b/PyQt5_gpl-5.10.1.tar.gz",
-                    "sha256": "9932e971e825ece4ea08f84ad95017837fa8f3f29c6b0496985fa1093661e9ef"
+                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/python-qt5/PyQt5_gpl-5.11.3.tar.gz/sha512/6f4abb1866ce357263c208121607072e127c8853e9c6bf039b034fefdda4c40e38f917c3b313375f0d692d764ecf26ff3a6b12cda2a2eeb5237db8b5e9443548/PyQt5_gpl-5.11.3.tar.gz",
+                    "sha256": "c9b57d15601d436faf35dacf8e0acefa220194829a653e771e80b189b3261073"
                 },
                 {
                     "type": "file",
