@@ -8,7 +8,17 @@
 
   <description>
     <p>
-      Tag your music with the next generation MusicBrainz tagger.
+      Do you need to clean up your music library? Picard is an open-source
+      cross-platform music tagger by MusicBrainz. It has the ability to
+      identify audio files without any metadata.
+    </p>
+    <p>
+      A variety of plugins are available and you can even write your own.
+      Picard supports a wide range of audio formats and can also lookup an
+      entire CD for you.
+    </p>
+    <p>
+      Tagging audio files has never been easier.
     </p>
   </description>
 
