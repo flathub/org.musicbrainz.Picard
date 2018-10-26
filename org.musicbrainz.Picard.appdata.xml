@@ -8,7 +8,7 @@
 
   <description>
     <p>
-      Tag your music with the next generation MusicBrainz tagger.
+      Tag your music with the next generation MusicBrainz tagger. Picard is an open-source cross-platform music tagger written in Python. It utilises Acoust ID to identify audio files, making it possible to tag audio files without any metadata. A variety of plugins are available and you can even write your own. Picard supports a wide range of audio formats and can even lookup an entire CD for you. Tagging audio files has never been easier.
     </p>
   </description>
 
