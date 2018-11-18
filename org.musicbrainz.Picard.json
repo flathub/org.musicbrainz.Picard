@@ -23,7 +23,7 @@
             "PYTHON": "/usr/bin/python3",
             "PIP": "/usr/bin/pip3"
         }
-    },	
+    },
     "modules": [
         {
             "name": "sip",
