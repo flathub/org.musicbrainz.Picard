@@ -214,9 +214,8 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "http://ftp.musicbrainz.org/pub/musicbrainz/picard/picard-2.0.4.tar.gz", /* No HTTPS */
-                    "sha256": "0c6ee49e0c6dd61793e5705823570055e55e7601d665c9be75271c8b2ff54337"
+                    "type": "git",
+                    "url": "https://github.com/metabrainz/picard.git"
                 },
                 {
                     "type": "file",
