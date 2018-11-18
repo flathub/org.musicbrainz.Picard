@@ -4,8 +4,6 @@
     "runtime-version": "5.11",
     "sdk": "org.kde.Sdk",
     "command": "picard",
-    "rename-desktop-file": "picard.desktop",
-    "rename-icon": "picard",
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
@@ -216,15 +214,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git"
-                },
-                {
-                    "type": "file",
-                    "path": "org.musicbrainz.Picard.appdata.xml"
                 }
-            ],
-            "post-install": [
-                "mkdir -p /app/share/appdata",
-                "install -m0644 -p org.musicbrainz.Picard.appdata.xml /app/share/appdata/"
             ]
         }
     ]
