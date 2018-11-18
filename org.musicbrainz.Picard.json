@@ -208,7 +208,7 @@
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --egg --no-deps --prefix=/app ."
+                "${PIP} install --egg --no-deps --prefix=/app --install-option='--disable-autoupdate' ."
             ],
             "sources": [
                 {
