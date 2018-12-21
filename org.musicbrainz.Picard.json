@@ -213,7 +213,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/metabrainz/picard.git"
+                    "url": "https://github.com/metabrainz/picard.git",
+                    "commit": "8444f01734656aed661f5f52ce6b62c517835347" /* 2.1.0 */
                 }
             ]
         }
