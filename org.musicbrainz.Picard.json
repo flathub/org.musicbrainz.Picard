@@ -195,8 +195,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/m/mutagen/mutagen-1.41.1.tar.gz",
-                    "sha256": "2ea9c900a05fa7f5f4c5bd9fc1475d7d576532e13b2f79b694452b997ff67200"
+                    "url": "https://files.pythonhosted.org/packages/source/m/mutagen/mutagen-1.42.0.tar.gz",
+                    "sha256": "bb61e2456f59a9a4a259fbc08def6d01ba45a42da8eeaa97d00633b0ec5de71c"
                 }
             ],
             "cleanup": [
@@ -214,7 +214,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
-                    "commit": "8444f01734656aed661f5f52ce6b62c517835347" /* 2.1.0 */
+                    "tag": "release-2.1.1",
+                    "commit": "bc587133d5dbf1f9bcc1cb00b2a09a0e05a5ce1d"
                 }
             ]
         }
