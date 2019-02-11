@@ -159,7 +159,7 @@
             ]
         },
         {
-            "name": "python-pkgconfig",
+            "name": "python-discid",
             "buildsystem": "simple",
             "build-commands": [
                 "${PIP} install --no-deps --prefix=/app ."
@@ -167,22 +167,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pkgconfig/pkgconfig-1.4.0.tar.gz",
-                    "sha256": "048c3b457da7b6f686b647ab10bf09e2250e4c50acfe6f215398a8b5e6fcdb52"
-                }
-            ]
-        },
-        {
-            "name": "python-libdiscid",
-            "buildsystem": "simple",
-            "build-commands": [
-                "${PIP} install --no-deps --prefix=/app ."
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/python-libdiscid/python-libdiscid-1.0.tar.gz",
-                    "sha256": "9b8203ac5e36116df430a4808f6552d59e38b458d53ba59aee31dbfaf366d311"
+                    "url": "https://files.pythonhosted.org/packages/source/d/discid/discid-1.1.1.tar.gz",
+                    "sha256": "78a3bf6c8377fdbe3d85e914a209ff97aa43e35605779639847b510ced31f7b9"
                 }
             ]
         },
