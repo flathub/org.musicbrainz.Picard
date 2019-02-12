@@ -1,7 +1,7 @@
 {
     "id": "org.musicbrainz.Picard",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.11",
+    "runtime-version": "5.12",
     "sdk": "org.kde.Sdk",
     "command": "picard",
     "finish-args": [
@@ -14,9 +14,6 @@
         "--filesystem=xdg-music"
     ],
     "build-options": {
-        "cflags": "-O2 -g -pipe -fstack-protector-strong -D_FORTIFY_SOURCE=2",
-        "cxxflags": "-O2 -g -pipe -fstack-protector-strong -D_FORTIFY_SOURCE=2",
-        "ldflags": "-fstack-protector-strong -Wl,-z,relro,-z,now",
         "env": {
             "PYTHON": "/usr/bin/python3",
             "PIP": "/usr/bin/pip3"
@@ -28,9 +25,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    /* Sourceforge URLs fail intermitently, get the tarballs from Fedora, check the upstream hashes */
-                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/sip/sip-4.19.13.tar.gz/sha512/eb456e1f7efa463f859047acc5301e19279e1627629d0bad3ac7a0a52b77575126bc3f2c64bb4278ae11d415c13d2731dfc8c816bba71307173d393a414aae98/sip-4.19.13.tar.gz",
-                    "sha256": "e353a7056599bf5fbd5d3ff9842a6ab2ea3cf4e0304a0f925ec5862907c0d15e"
+                    "url": "https://www.riverbankcomputing.com/static/Downloads/sip/sip-4.19.14.tar.gz",
+                    "sha256": "0ef3765dbcc3b8131f83e60239f49508f82205b33cae5408c405e2e2f2d0af87"
                 },
                 {
                     "type": "file",
@@ -48,9 +44,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    /* Sourceforge URLs fail intermitently, get the tarballs from Fedora, check the upstream hashes */
-                    "url": "https://src.fedoraproject.org/repo/pkgs/rpms/python-qt5/PyQt5_gpl-5.11.3.tar.gz/sha512/6f4abb1866ce357263c208121607072e127c8853e9c6bf039b034fefdda4c40e38f917c3b313375f0d692d764ecf26ff3a6b12cda2a2eeb5237db8b5e9443548/PyQt5_gpl-5.11.3.tar.gz",
-                    "sha256": "c9b57d15601d436faf35dacf8e0acefa220194829a653e771e80b189b3261073"
+                    "url": "https://www.riverbankcomputing.com/static/Downloads/PyQt5/PyQt5_gpl-5.12.tar.gz",
+                    "sha256": "d9e70065b5980afde5f2b9bc900910050331604e02c70666c45fcfc66b0d4f34"
                 },
                 {
                     "type": "file",
@@ -159,7 +154,7 @@
             ]
         },
         {
-            "name": "python-pkgconfig",
+            "name": "python-discid",
             "buildsystem": "simple",
             "build-commands": [
                 "${PIP} install --no-deps --prefix=/app ."
@@ -167,22 +162,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pkgconfig/pkgconfig-1.4.0.tar.gz",
-                    "sha256": "048c3b457da7b6f686b647ab10bf09e2250e4c50acfe6f215398a8b5e6fcdb52"
-                }
-            ]
-        },
-        {
-            "name": "python-libdiscid",
-            "buildsystem": "simple",
-            "build-commands": [
-                "${PIP} install --no-deps --prefix=/app ."
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/python-libdiscid/python-libdiscid-1.0.tar.gz",
-                    "sha256": "9b8203ac5e36116df430a4808f6552d59e38b458d53ba59aee31dbfaf366d311"
+                    "url": "https://files.pythonhosted.org/packages/source/d/discid/discid-1.1.1.tar.gz",
+                    "sha256": "78a3bf6c8377fdbe3d85e914a209ff97aa43e35605779639847b510ced31f7b9"
                 }
             ]
         },
@@ -208,7 +189,7 @@
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --egg --no-deps --prefix=/app --install-option='--disable-autoupdate' ."
+                "${PYTHON} setup.py install --prefix=/app --disable-autoupdate"
             ],
             "sources": [
                 {
