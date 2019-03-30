@@ -25,8 +25,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.riverbankcomputing.com/static/Downloads/sip/sip-4.19.14.tar.gz",
-                    "sha256": "0ef3765dbcc3b8131f83e60239f49508f82205b33cae5408c405e2e2f2d0af87"
+                    "url": "https://www.riverbankcomputing.com/static/Downloads/sip/4.19.15/sip-4.19.15.tar.gz",
+                    "sha256": "2b5c0b2c0266b467b365c21376d50dde61a3236722ab87ff1e8dacec283eb610"
                 },
                 {
                     "type": "file",
@@ -44,8 +44,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.riverbankcomputing.com/static/Downloads/PyQt5/PyQt5_gpl-5.12.tar.gz",
-                    "sha256": "d9e70065b5980afde5f2b9bc900910050331604e02c70666c45fcfc66b0d4f34"
+                    "url": "https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.12.1/PyQt5_gpl-5.12.1.tar.gz",
+                    "sha256": "3718ce847d824090fd5f95ff3f13847ee75c2507368d4cbaeb48338f506e59bf"
                 },
                 {
                     "type": "file",
