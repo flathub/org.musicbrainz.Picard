@@ -1,9 +1,12 @@
 #!/bin/sh
 
+PYTHON_VERSION=$(${PYTHON} -c 'import sys; print(sys.version[:3])')
+
 ${PYTHON} configure.py \
     --assume-shared \
     --concatenate \
     --confirm-license \
+    --destdir=/app/lib/python${PYTHON_VERSION}/site-packages \
     --enable=QtCore \
     --enable=QtGui \
     --enable=QtNetwork \
@@ -15,5 +18,4 @@ ${PYTHON} configure.py \
     --no-qsci-api \
     --no-sip-files \
     --no-stubs \
-    --no-tools \
-    --sysroot=/app
+    --no-tools
