@@ -10,4 +10,7 @@ ${PYTHON} configure.py \
     --incdir=/app/include \
     --pyidir=/app/lib/python${PYTHON_VERSION}/site-packages \
     --sipdir=/app/share/sip \
-    --sip-module=PyQt5.sip
+    --sip-module=PyQt5.sip \
+    CFLAGS="$CFLAGS" \
+    CXXFLAGS="$CXXFLAGS" \
+    LFLAGS="$LDFLAGS"

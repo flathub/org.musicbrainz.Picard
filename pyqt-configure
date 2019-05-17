@@ -18,4 +18,7 @@ ${PYTHON} configure.py \
     --no-qsci-api \
     --no-sip-files \
     --no-stubs \
-    --no-tools
+    --no-tools \
+    QMAKE_CFLAGS_RELEASE="$CFLAGS" \
+    QMAKE_CXXFLAGS_RELEASE="$CXXFLAGS" \
+    QMAKE_LFLAGS_RELEASE="$LDFLAGS"
