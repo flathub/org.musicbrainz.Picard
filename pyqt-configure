@@ -6,7 +6,7 @@ ${PYTHON} configure.py \
     --assume-shared \
     --concatenate \
     --confirm-license \
-    --destdir=/app/lib/python${PYTHON_VERSION}/site-packages \
+    --destdir=${FLATPAK_DEST}/lib/python${PYTHON_VERSION}/site-packages \
     --enable=QtCore \
     --enable=QtGui \
     --enable=QtMultimedia \

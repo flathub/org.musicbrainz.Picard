@@ -157,7 +157,7 @@
             "name": "python-discid",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --prefix=/app ."
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -171,7 +171,7 @@
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --prefix=/app ."
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -189,7 +189,7 @@
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "${PYTHON} setup.py install --prefix=/app --disable-autoupdate"
+                "${PYTHON} setup.py install --prefix=${FLATPAK_DEST} --disable-autoupdate"
             ],
             "sources": [
                 {
