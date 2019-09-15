@@ -9,6 +9,7 @@ ${PYTHON} configure.py \
     --destdir=/app/lib/python${PYTHON_VERSION}/site-packages \
     --enable=QtCore \
     --enable=QtGui \
+    --enable=QtMultimedia \
     --enable=QtNetwork \
     --enable=QtWidgets \
     --no-designer-plugin \
