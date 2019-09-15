@@ -162,8 +162,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/d/discid/discid-1.1.1.tar.gz",
-                    "sha256": "78a3bf6c8377fdbe3d85e914a209ff97aa43e35605779639847b510ced31f7b9"
+                    "url": "https://files.pythonhosted.org/packages/source/d/discid/discid-1.2.0.tar.gz",
+                    "sha256": "cd9630bc53f5566df92819641040226e290b2047573f2c74a6e92b8eed9e86b9"
                 }
             ]
         },
