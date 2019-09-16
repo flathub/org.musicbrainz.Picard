@@ -5,11 +5,11 @@ PYTHON_VERSION=$(${PYTHON} -c 'import sys; print(sys.version[:3])')
 ${PYTHON} configure.py \
     --no-dist-info \
     --no-stubs \
-    --bindir=/app/bin \
-    --destdir=/app/lib/python${PYTHON_VERSION}/site-packages \
-    --incdir=/app/include \
-    --pyidir=/app/lib/python${PYTHON_VERSION}/site-packages \
-    --sipdir=/app/share/sip \
+    --bindir=${FLATPAK_DEST}/bin \
+    --destdir=${FLATPAK_DEST}/lib/python${PYTHON_VERSION}/site-packages \
+    --incdir=${FLATPAK_DEST}/include \
+    --pyidir=${FLATPAK_DEST}/lib/python${PYTHON_VERSION}/site-packages \
+    --sipdir=${FLATPAK_DEST}/share/sip \
     --sip-module=PyQt5.sip \
     CFLAGS="$CFLAGS" \
     CXXFLAGS="$CXXFLAGS" \
