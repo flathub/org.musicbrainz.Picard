@@ -188,6 +188,44 @@
             ]
         },
         {
+            "name": "bpm-plugin-dep-numpy",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.17.2.zip",
+                    "sha256": "73615d3edc84dd7c4aeb212fa3748fb83217e00d201875a47327f55363cef2df"
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/lib/python3.*/site-packages/numpy/core/include",
+                "/lib/python3.*/site-packages/numpy/core/lib/libnpymath.a",
+                "/lib/python3.*/site-packages/numpy/tests",
+                "/lib/python3.*/site-packages/numpy/*/tests"
+            ]
+        },
+        {
+            "name": "bpm-plugin-dep-aubio",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/a/aubio/aubio-0.4.9.tar.gz",
+                    "sha256": "df1244f6c4cf5bea382c8c2d35aa43bc31f4cf631fe325ae3992c219546a4202"
+                }
+            ],
+            "cleanup": [
+                "/bin"
+            ]
+        },
+        {
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
