@@ -178,8 +178,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/m/mutagen/mutagen-1.42.0.tar.gz",
-                    "sha256": "bb61e2456f59a9a4a259fbc08def6d01ba45a42da8eeaa97d00633b0ec5de71c"
+                    "url": "https://files.pythonhosted.org/packages/source/m/mutagen/mutagen-1.43.0.tar.gz",
+                    "sha256": "3a982d39f1b800520a32afdebe3543f972e83a6ddd0c0198739a161ee705b588"
                 }
             ],
             "cleanup": [
