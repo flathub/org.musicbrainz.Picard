@@ -23,26 +23,110 @@
     },
     "modules": [
         {
-            "name": "sip",
+            "name": "python-pyparsing",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+            ],
+            "cleanup": [
+                "*"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.riverbankcomputing.com/static/Downloads/sip/4.19.19/sip-4.19.19.tar.gz",
-                    "sha256": "5436b61a78f48c7e8078e93a6b59453ad33780f80c644e5f3af39f94be1ede44"
-                },
-                {
-                    "type": "file",
-                    "path": "sip-configure",
-                    "dest-filename": "configure"
+                    "url": "https://files.pythonhosted.org/packages/00/32/8076fa13e832bb4dcff379f18f228e5a53412be0631808b9ca2610c0f566/pyparsing-2.4.5.tar.gz",
+                    "sha256": "4ca62001be367f01bd3e92ecbb79070272a9d4964dce6a48a82ff0b8bc7e683a"
                 }
+            ]
+        },
+        {
+            "name": "python-packaging",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
-                "/bin",
-                "/include"
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/5a/2f/449ded84226d0e2fda8da9252e5ee7731bdf14cd338f622dfcd9934e0377/packaging-19.2.tar.gz",
+                    "sha256": "28b924174df7a2fa32c1953825ff29c61e2f5e082343165438812f00d3a7fc47"
+                }
+            ]
+        },
+        {
+            "name": "python-toml",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+            ],
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/b9/19/5cbd78eac8b1783671c40e34bb0fa83133a06d340a38b55c645076d40094/toml-0.10.0.tar.gz",
+                    "sha256": "229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c"
+                }
+            ]
+        },
+        {
+            "name": "sip",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+            ],
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/c6/7f/b0830b133e6fac3902ecea99acc99e41972d9b565cda5d68ae33ae37909c/sip-5.0.0.tar.gz",
+                    "sha256": "c034d427f52584d63277dd7df4d16d00c5df0b5cb838e0c256865b854b7e074b"
+                }
+            ]
+        },
+        {
+            "name": "pyqt-sip",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/16/81/65f1c54ee545aef75e7ff760a5635f176d1528a1bf6d874bfe22bb2d283c/PyQt5_sip-12.7.0.tar.gz",
+                    "sha256": "0a067ade558befe4d46335b13d8b602b5044363bfd601419b556d4ec659bca18"
+                }
+            ]
+        },
+        {
+            "name": "pyqt-builder",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+            ],
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/fc/a8/d84a2de115d29d8a181f7ef5967f4d10934537c85daa69532757a4463d7f/PyQt-builder-1.0.1.tar.gz",
+                    "sha256": "2d19dcd078d2f86b162f9f3adf6a74098f1f0ee03b07774b0c0d603c484f264a"
+                }
             ]
         },
         {
             "name": "pyqt",
+            "buildsystem": "simple",
+            "build-commands": [
+                ". ${FLATPAK_BUILDER_BUILDDIR}/build"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -51,8 +135,8 @@
                 },
                 {
                     "type": "file",
-                    "path": "pyqt-configure",
-                    "dest-filename": "configure"
+                    "path": "pyqt-build",
+                    "dest-filename": "build"
                 }
             ],
             "cleanup": [
