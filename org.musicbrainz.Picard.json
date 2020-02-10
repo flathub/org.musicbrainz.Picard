@@ -140,14 +140,12 @@
         },
         {
             "name": "libdiscid",
-            "config-opts": [
-                "--disable-static"
-            ],
+            "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.musicbrainz.org/pub/musicbrainz/libdiscid/libdiscid-0.6.2.tar.gz", /* No HTTPS */
-                    "sha256": "f9e443ac4c0dd4819c2841fcc82169a46fb9a626352cdb9c7f65dd3624cd31b9"
+                    "url": "https://github.com/metabrainz/libdiscid/archive/v0.6.2.tar.gz",
+                    "sha256": "a9b73b030603ce707941a3aab4f46649fa5029025e7e2bfbbe0c3c93a86d7b20"
                 }
             ],
             "cleanup": [
