@@ -23,36 +23,120 @@
     },
     "modules": [
         {
-            "name": "sip",
+            "name": "python-pyparsing",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+            ],
+            "cleanup": [
+                "*"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.riverbankcomputing.com/static/Downloads/sip/4.19.19/sip-4.19.19.tar.gz",
-                    "sha256": "5436b61a78f48c7e8078e93a6b59453ad33780f80c644e5f3af39f94be1ede44"
-                },
-                {
-                    "type": "file",
-                    "path": "sip-configure",
-                    "dest-filename": "configure"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-2.4.6.tar.gz",
+                    "sha256": "4c830582a84fb022400b85429791bc551f1f4871c33f23e44f353119e92f969f"
                 }
+            ]
+        },
+        {
+            "name": "python-packaging",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
-                "/bin",
-                "/include"
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/p/packaging/packaging-20.1.tar.gz",
+                    "sha256": "e665345f9eef0c621aa0bf2f8d78cf6d21904eef16a93f020240b704a57f1334"
+                }
+            ]
+        },
+        {
+            "name": "python-toml",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+            ],
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/t/toml/toml-0.10.0.tar.gz",
+                    "sha256": "229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c"
+                }
+            ]
+        },
+        {
+            "name": "sip",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+            ],
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/s/sip/sip-5.1.1.tar.gz",
+                    "sha256": "3b600dd1c8293bb7cf002a20dbbc736010c6a5e161241d73b16685744ffe57c2"
+                }
+            ]
+        },
+        {
+            "name": "pyqt-sip",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5-sip/PyQt5_sip-12.7.1.tar.gz",
+                    "sha256": "e6078f5ee7d31c102910d0c277a110e1c2a20a3fc88cd017a39e170120586d3f"
+                }
+            ]
+        },
+        {
+            "name": "pyqt-builder",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+            ],
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt-builder/PyQt-builder-1.2.0.tar.gz",
+                    "sha256": "e449480cb8484945232fdb4b4c577056b7f4c2c44a9000960f6d4222d80f4a71"
+                }
             ]
         },
         {
             "name": "pyqt",
+            "buildsystem": "simple",
+            "build-commands": [
+                ". ${FLATPAK_BUILDER_BUILDDIR}/build"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.13.2/PyQt5-5.13.2.tar.gz",
-                    "sha256": "adc17c077bf233987b8e43ada87d1e0deca9bd71a13e5fd5fc377482ed69c827"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5/PyQt5-5.14.1.tar.gz",
+                    "sha256": "2f230f2dbd767099de7a0cb915abdf0cbc3256a0b5bb910eb09b99117db7a65b"
                 },
                 {
                     "type": "file",
-                    "path": "pyqt-configure",
-                    "dest-filename": "configure"
+                    "path": "pyqt-build",
+                    "dest-filename": "build"
                 }
             ],
             "cleanup": [
@@ -157,7 +241,7 @@
             "name": "python-discid",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -171,7 +255,7 @@
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -189,7 +273,7 @@
             "name": "bpm-plugin-dep-numpy",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -210,7 +294,7 @@
             "name": "bpm-plugin-dep-aubio",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
