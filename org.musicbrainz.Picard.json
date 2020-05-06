@@ -317,8 +317,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.3.1",
-                    "commit": "dd5be667285e47d13ab51251dfab8e2447c0c338"
+                    "tag": "release-2.3.2",
+                    "commit": "3881261fc00e9a42083e7ddf86888de170e6a83d"
                 }
             ]
         }
