@@ -13,7 +13,8 @@
         "--device=all",
         "--filesystem=home",
         "--filesystem=xdg-music",
-        "--filesystem=/tmp"
+        "--filesystem=/tmp",
+        "--talk-name=org.a11y.Bus"
     ],
     "build-options": {
         "env": {
@@ -51,8 +52,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/packaging/packaging-20.3.tar.gz",
-                    "sha256": "3c292b474fda1671ec57d46d739d072bfd495a4f51ad01a055121d81e952b7a3"
+                    "url": "https://files.pythonhosted.org/packages/source/p/packaging/packaging-20.4.tar.gz",
+                    "sha256": "4357f74f47b9c12db93624a82154e9b120fa8293699949152b22065d556079f8"
                 }
             ]
         },
@@ -68,8 +69,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/t/toml/toml-0.10.0.tar.gz",
-                    "sha256": "229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c"
+                    "url": "https://files.pythonhosted.org/packages/source/t/toml/toml-0.10.1.tar.gz",
+                    "sha256": "926b612be1e5ce0634a2ca03470f95169cf16f939018233a670519cb4ac58b0f"
                 }
             ]
         },
@@ -85,8 +86,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/s/sip/sip-5.2.0.tar.gz",
-                    "sha256": "3d3f279a61d54d832b12496409811ee062dab1ac05a1e7b40824f63b423fb0e7"
+                    "url": "https://files.pythonhosted.org/packages/source/s/sip/sip-5.3.0.tar.gz",
+                    "sha256": "03a44e20b252ef03ca2891e9439d238af3fd8245f65cdcff238a843d4f455b80"
                 }
             ]
         },
@@ -99,8 +100,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5-sip/PyQt5_sip-12.7.2.tar.gz",
-                    "sha256": "16a19b9f36985b8bff30b89fb8859d831713dd528fba5600563e36ff077960a2"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5-sip/PyQt5_sip-12.8.0.tar.gz",
+                    "sha256": "0a34b6596bdd28d52da3a51fa8d9bb0b287bcb605c2512aa3251b9028cc71f4d"
                 }
             ]
         },
@@ -116,8 +117,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt-builder/PyQt-builder-1.3.2.tar.gz",
-                    "sha256": "d4c93c95d737fb654f0c7e824c668357003c744529a39df6c4456d5627a64b66"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt-builder/PyQt-builder-1.4.0.tar.gz",
+                    "sha256": "be7fb8436e6ffb21b7e42266f0fa4776b7d62b0c7e06c63f8a066ff90554fcdc"
                 }
             ]
         },
@@ -130,8 +131,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5/PyQt5-5.14.2.tar.gz",
-                    "sha256": "bd230c6fd699eabf1ceb51e13a8b79b74c00a80272c622427b80141a22269eb0"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5/PyQt5-5.15.0.tar.gz",
+                    "sha256": "c6f75488ffd5365a65893bc64ea82a6957db126fbfe33654bcd43ae1c30c52f9"
                 },
                 {
                     "type": "file",
@@ -252,6 +253,45 @@
             ]
         },
         {
+            "name": "python-setuptools-scm",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+            ],
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-4.1.2.tar.gz",
+                    "sha256": "a8994582e716ec690f33fec70cca0f85bd23ec974e3f783233e4879090a7faa8"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/python-setuptools-scm/remove-build-backend-in-pyproject.patch"
+                }
+            ]
+        },
+        {
+            "name": "python-dateutil",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/p/python-dateutil/python-dateutil-2.8.1.tar.gz",
+                    "sha256": "73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/python-dateutil/remove-build-backend-in-pyproject.patch"
+                }
+            ]
+        },
+        {
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
@@ -317,8 +357,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.3.2",
-                    "commit": "3881261fc00e9a42083e7ddf86888de170e6a83d"
+                    "tag": "release-2.4",
+                    "commit": "8eae19106237bbca3f7ac59ea23945aef0db15e5"
                 }
             ]
         }

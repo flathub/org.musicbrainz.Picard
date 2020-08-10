@@ -1,0 +1,12 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index e83d69f..27dcf6a 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -5,7 +5,6 @@ requires = [
+     "wheel",
+     "setuptools_scm"
+ ]
+-build-backend = "setuptools.build_meta"
+ 
+ [tool.towncrier]
+     package = "dateutil"
