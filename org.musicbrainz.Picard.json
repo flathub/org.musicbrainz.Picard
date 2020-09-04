@@ -96,8 +96,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/s/sip/sip-5.3.0.tar.gz",
-                    "sha256": "03a44e20b252ef03ca2891e9439d238af3fd8245f65cdcff238a843d4f455b80"
+                    "url": "https://files.pythonhosted.org/packages/source/s/sip/sip-5.4.0.tar.gz",
+                    "sha256": "4282ab45948674f5ef74278a8e70d1302f65c95b519a0af19409002f5715d641"
                 }
             ]
         },
@@ -110,8 +110,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5-sip/PyQt5_sip-12.8.0.tar.gz",
-                    "sha256": "0a34b6596bdd28d52da3a51fa8d9bb0b287bcb605c2512aa3251b9028cc71f4d"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5-sip/PyQt5_sip-12.8.1.tar.gz",
+                    "sha256": "30e944db9abee9cc757aea16906d4198129558533eb7fadbe48c5da2bd18e0bd"
                 }
             ]
         },
@@ -127,8 +127,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt-builder/PyQt-builder-1.4.0.tar.gz",
-                    "sha256": "be7fb8436e6ffb21b7e42266f0fa4776b7d62b0c7e06c63f8a066ff90554fcdc"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt-builder/PyQt-builder-1.5.0.tar.gz",
+                    "sha256": "11bbe26e8e3d5ffec6d2ef2f50596b1670eb2d8b49aee0f859821922d8282841"
                 }
             ]
         },
