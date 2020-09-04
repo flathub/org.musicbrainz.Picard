@@ -308,8 +308,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.4.3",
-                    "commit": "31af8236669836fa147e40dbc3b946419229cdbf"
+                    "tag": "release-2.4.4",
+                    "commit": "559126e37f32b1093589d266a75083db47a20e69"
                 }
             ]
         }
