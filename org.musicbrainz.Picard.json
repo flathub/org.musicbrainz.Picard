@@ -141,8 +141,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5/PyQt5-5.15.0.tar.gz",
-                    "sha256": "c6f75488ffd5365a65893bc64ea82a6957db126fbfe33654bcd43ae1c30c52f9"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5/PyQt5-5.15.1.tar.gz",
+                    "sha256": "d9a76b850246d08da9863189ecb98f6c2aa9b4d97a3e85e29330a264aed0f9a1"
                 },
                 {
                     "type": "file",
