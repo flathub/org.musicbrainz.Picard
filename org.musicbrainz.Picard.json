@@ -37,7 +37,7 @@
             "name": "python-pyparsing",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -54,7 +54,7 @@
             "name": "python-packaging",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -71,7 +71,7 @@
             "name": "python-toml",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -88,7 +88,7 @@
             "name": "sip",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -105,7 +105,7 @@
             "name": "pyqt-sip",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -119,7 +119,7 @@
             "name": "pyqt-builder",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -193,7 +193,7 @@
             "name": "python-discid",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -207,7 +207,7 @@
             "name": "python-setuptools-scm",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -217,10 +217,6 @@
                     "type": "archive",
                     "url": "https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-4.1.2.tar.gz",
                     "sha256": "a8994582e716ec690f33fec70cca0f85bd23ec974e3f783233e4879090a7faa8"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/python-setuptools-scm/remove-build-backend-in-pyproject.patch"
                 }
             ]
         },
@@ -228,17 +224,13 @@
             "name": "python-dateutil",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
                     "type": "archive",
                     "url": "https://files.pythonhosted.org/packages/source/p/python-dateutil/python-dateutil-2.8.1.tar.gz",
                     "sha256": "73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/python-dateutil/remove-build-backend-in-pyproject.patch"
                 }
             ]
         },
@@ -246,7 +238,7 @@
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -264,7 +256,7 @@
             "name": "bpm-plugin-dep-numpy",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -285,7 +277,7 @@
             "name": "bpm-plugin-dep-aubio",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
