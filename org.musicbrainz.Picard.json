@@ -37,7 +37,7 @@
             "name": "python-pyparsing",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -54,7 +54,7 @@
             "name": "python-packaging",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/packaging/packaging-20.4.tar.gz",
-                    "sha256": "4357f74f47b9c12db93624a82154e9b120fa8293699949152b22065d556079f8"
+                    "url": "https://files.pythonhosted.org/packages/source/p/packaging/packaging-20.8.tar.gz",
+                    "sha256": "78598185a7008a470d64526a8059de9aaa449238f280fc9eb6b13ba6c4109093"
                 }
             ]
         },
@@ -71,7 +71,7 @@
             "name": "python-toml",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -79,8 +79,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/t/toml/toml-0.10.1.tar.gz",
-                    "sha256": "926b612be1e5ce0634a2ca03470f95169cf16f939018233a670519cb4ac58b0f"
+                    "url": "https://files.pythonhosted.org/packages/source/t/toml/toml-0.10.2.tar.gz",
+                    "sha256": "b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"
                 }
             ]
         },
@@ -88,7 +88,7 @@
             "name": "sip",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -96,8 +96,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/s/sip/sip-5.4.0.tar.gz",
-                    "sha256": "4282ab45948674f5ef74278a8e70d1302f65c95b519a0af19409002f5715d641"
+                    "url": "https://files.pythonhosted.org/packages/source/s/sip/sip-5.5.0.tar.gz",
+                    "sha256": "5d024c419b30fea8a6de8c71a560c7ab0bc3c221fbfb14d55a5b865bd58eaac5"
                 }
             ]
         },
@@ -105,7 +105,7 @@
             "name": "pyqt-sip",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -119,7 +119,7 @@
             "name": "pyqt-builder",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -127,8 +127,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt-builder/PyQt-builder-1.5.0.tar.gz",
-                    "sha256": "11bbe26e8e3d5ffec6d2ef2f50596b1670eb2d8b49aee0f859821922d8282841"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt-builder/PyQt-builder-1.6.0.tar.gz",
+                    "sha256": "fb80f01407718bfc68f78e276f2543fcfc5b5900b1187c1fd1f2ff51a6f2a13c"
                 }
             ]
         },
@@ -141,8 +141,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5/PyQt5-5.15.1.tar.gz",
-                    "sha256": "d9a76b850246d08da9863189ecb98f6c2aa9b4d97a3e85e29330a264aed0f9a1"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5/PyQt5-5.15.2.tar.gz",
+                    "sha256": "372b08dc9321d1201e4690182697c5e7ffb2e0770e6b4a45519025134b12e4fc"
                 },
                 {
                     "type": "file",
@@ -193,7 +193,7 @@
             "name": "python-discid",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -207,7 +207,7 @@
             "name": "python-setuptools-scm",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -217,10 +217,6 @@
                     "type": "archive",
                     "url": "https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-4.1.2.tar.gz",
                     "sha256": "a8994582e716ec690f33fec70cca0f85bd23ec974e3f783233e4879090a7faa8"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/python-setuptools-scm/remove-build-backend-in-pyproject.patch"
                 }
             ]
         },
@@ -228,17 +224,13 @@
             "name": "python-dateutil",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
                     "type": "archive",
                     "url": "https://files.pythonhosted.org/packages/source/p/python-dateutil/python-dateutil-2.8.1.tar.gz",
                     "sha256": "73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/python-dateutil/remove-build-backend-in-pyproject.patch"
                 }
             ]
         },
@@ -246,7 +238,7 @@
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -264,13 +256,13 @@
             "name": "bpm-plugin-dep-numpy",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.19.2.zip",
-                    "sha256": "0d310730e1e793527065ad7dde736197b705d0e4c9999775f212b03c44a8484c"
+                    "url": "https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.19.4.zip",
+                    "sha256": "141ec3a3300ab89c7f2b0775289954d193cc8edb621ea05f99db9cb181530512"
                 }
             ],
             "cleanup": [
@@ -285,7 +277,7 @@
             "name": "bpm-plugin-dep-aubio",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-use-pep517 --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -308,8 +300,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.5.2",
-                    "commit": "b8fc83b03819bfba19fd70e3095f37b99b6facd3"
+                    "tag": "release-2.5.3",
+                    "commit": "809fb173a0e0a0fe4ed143471ecfa3a5377d8200"
                 }
             ]
         }
