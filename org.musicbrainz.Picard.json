@@ -261,8 +261,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.19.4.zip",
-                    "sha256": "141ec3a3300ab89c7f2b0775289954d193cc8edb621ea05f99db9cb181530512"
+                    "url": "https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.20.2.zip",
+                    "sha256": "878922bf5ad7550aa044aa9301d417e2d3ae50f0f577de92051d739ac6096cee"
                 }
             ],
             "cleanup": [
