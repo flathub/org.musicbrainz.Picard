@@ -235,6 +235,20 @@
             ]
         },
         {
+            "name": "python-fasteners",
+            "buildsystem": "simple",
+            "build-commands": [
+                "${PIP} install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/f/fasteners/fasteners-0.16.tar.gz",
+                    "sha256": "c995d8c26b017c5d6a6de9ad29a0f9cdd57de61ae1113d28fac26622b06a0933"
+                }
+            ]
+        },
+        {
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
@@ -300,8 +314,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.5.6",
-                    "commit": "b1aafb9df32615591aeebbb8dc352b217946342d"
+                    "tag": "release-2.6",
+                    "commit": "c89df12f78693d04b2586a04a3f00bfdf476ada6"
                 }
             ]
         }
