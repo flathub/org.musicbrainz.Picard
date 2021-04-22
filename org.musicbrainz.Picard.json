@@ -96,8 +96,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/s/sip/sip-6.0.3.tar.gz",
-                    "sha256": "929e3515428ea962003ccf6795244a5fe4fa6e2c94dc9ab8cb2c58fcd368c34c"
+                    "url": "https://files.pythonhosted.org/packages/76/d9/5e1048d2f2fa6714e0d76382810b0fa81400c40e25b1f4f46c1a82e48364/sip-6.0.3.tar.gz",
+                    "sha256": "929e3515428ea962003ccf6795244a5fe4fa6e2c94dc9ab8cb2c58fcd368c34c",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "sip"
+                    }
                 }
             ]
         },
@@ -110,8 +114,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5-sip/PyQt5_sip-12.8.1.tar.gz",
-                    "sha256": "30e944db9abee9cc757aea16906d4198129558533eb7fadbe48c5da2bd18e0bd"
+                    "url": "https://files.pythonhosted.org/packages/73/8c/c662b7ebc4b2407d8679da68e11c2a2eb275f5f2242a92610f6e5024c1f2/PyQt5_sip-12.8.1.tar.gz",
+                    "sha256": "30e944db9abee9cc757aea16906d4198129558533eb7fadbe48c5da2bd18e0bd",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "pyqt5-sip"
+                    }
                 }
             ]
         },
@@ -127,8 +135,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt-builder/PyQt-builder-1.9.1.tar.gz",
-                    "sha256": "8d669fe8fa434a3e47abde3b40d924d91932e8e19d88b20c778a3e1c77621ebc"
+                    "url": "https://files.pythonhosted.org/packages/22/c9/862c300cc29ab43664f539451c69aaf0d45766818a3a7671d6ec01635430/PyQt-builder-1.9.1.tar.gz",
+                    "sha256": "8d669fe8fa434a3e47abde3b40d924d91932e8e19d88b20c778a3e1c77621ebc",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "pyqt-builder"
+                    }
                 }
             ]
         },
@@ -141,8 +153,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyqt5/PyQt5-5.15.4.tar.gz",
-                    "sha256": "2a69597e0dd11caabe75fae133feca66387819fc9bc050f547e5551bce97e5be"
+                    "url": "https://files.pythonhosted.org/packages/8e/a4/d5e4bf99dd50134c88b95e926d7b81aad2473b47fde5e3e4eac2c69a8942/PyQt5-5.15.4.tar.gz",
+                    "sha256": "2a69597e0dd11caabe75fae133feca66387819fc9bc050f547e5551bce97e5be",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "pyqt5"
+                    }
                 },
                 {
                     "type": "file",
@@ -166,7 +182,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/acoustid/chromaprint/releases/download/v1.5.0/chromaprint-1.5.0.tar.gz",
-                    "sha256": "573a5400e635b3823fc2394cfa7a217fbb46e8e50ecebd4a61991451a8af766a"
+                    "sha256": "573a5400e635b3823fc2394cfa7a217fbb46e8e50ecebd4a61991451a8af766a",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 286,
+                        "stable-only": true,
+                        "url-template": "https://github.com/acoustid/chromaprint/releases/download/v$version/chromaprint-$version.tar.gz"
+                    }
                 }
             ],
             "cleanup": [
@@ -181,7 +203,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/metabrainz/libdiscid/archive/v0.6.2.tar.gz",
-                    "sha256": "a9b73b030603ce707941a3aab4f46649fa5029025e7e2bfbbe0c3c93a86d7b20"
+                    "sha256": "a9b73b030603ce707941a3aab4f46649fa5029025e7e2bfbbe0c3c93a86d7b20",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1592,
+                        "stable-only": true,
+                        "url-template": "https://github.com/metabrainz/libdiscid/archive/v$version.tar.gz"
+                    }
                 }
             ],
             "cleanup": [
@@ -198,8 +226,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/d/discid/discid-1.2.0.tar.gz",
-                    "sha256": "cd9630bc53f5566df92819641040226e290b2047573f2c74a6e92b8eed9e86b9"
+                    "url": "https://files.pythonhosted.org/packages/d5/fa/c8856ae3eb53393445d84589afbd49ded85527563a7c0457f4e967d5b7af/discid-1.2.0.tar.gz",
+                    "sha256": "cd9630bc53f5566df92819641040226e290b2047573f2c74a6e92b8eed9e86b9",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "discid"
+                    }
                 }
             ]
         },
@@ -229,8 +261,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/python-dateutil/python-dateutil-2.8.1.tar.gz",
-                    "sha256": "73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"
+                    "url": "https://files.pythonhosted.org/packages/be/ed/5bbc91f03fa4c839c4c7360375da77f9659af5f7086b7a7bdda65771c8e0/python-dateutil-2.8.1.tar.gz",
+                    "sha256": "73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "python-dateutil"
+                    }
                 }
             ]
         },
@@ -243,8 +279,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/f/fasteners/fasteners-0.16.tar.gz",
-                    "sha256": "c995d8c26b017c5d6a6de9ad29a0f9cdd57de61ae1113d28fac26622b06a0933"
+                    "url": "https://files.pythonhosted.org/packages/d1/8f/a6c06f9bce5691a40283e52b92ec1522d6863951e738a31b109bf6bf2002/fasteners-0.16.tar.gz",
+                    "sha256": "c995d8c26b017c5d6a6de9ad29a0f9cdd57de61ae1113d28fac26622b06a0933",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "fasteners"
+                    }
                 }
             ]
         },
@@ -257,8 +297,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/m/mutagen/mutagen-1.45.1.tar.gz",
-                    "sha256": "6397602efb3c2d7baebd2166ed85731ae1c1d475abca22090b7141ff5034b3e1"
+                    "url": "https://files.pythonhosted.org/packages/f3/d9/2232a4cb9a98e2d2501f7e58d193bc49c956ef23756d7423ba1bd87e386d/mutagen-1.45.1.tar.gz",
+                    "sha256": "6397602efb3c2d7baebd2166ed85731ae1c1d475abca22090b7141ff5034b3e1",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "mutagen"
+                    }
                 }
             ],
             "cleanup": [
@@ -275,8 +319,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.20.2.zip",
-                    "sha256": "878922bf5ad7550aa044aa9301d417e2d3ae50f0f577de92051d739ac6096cee"
+                    "url": "https://files.pythonhosted.org/packages/82/a8/1e0f86ae3f13f7ce260e9f782764c16559917f24382c74edfb52149897de/numpy-1.20.2.zip",
+                    "sha256": "878922bf5ad7550aa044aa9301d417e2d3ae50f0f577de92051d739ac6096cee",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "numpy"
+                    }
                 }
             ],
             "cleanup": [
@@ -296,8 +344,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/a/aubio/aubio-0.4.9.tar.gz",
-                    "sha256": "df1244f6c4cf5bea382c8c2d35aa43bc31f4cf631fe325ae3992c219546a4202"
+                    "url": "https://files.pythonhosted.org/packages/cd/80/302d89240603e5347c7f8026c8b02c59f8dfaec66c91a743d82de7c86006/aubio-0.4.9.tar.gz",
+                    "sha256": "df1244f6c4cf5bea382c8c2d35aa43bc31f4cf631fe325ae3992c219546a4202",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "aubio"
+                    }
                 }
             ],
             "cleanup": [
@@ -315,7 +367,12 @@
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
                     "tag": "release-2.6.1",
-                    "commit": "bf2eceeea2878d7e91d32ef8cd41e8699a3aa921"
+                    "commit": "bf2eceeea2878d7e91d32ef8cd41e8699a3aa921",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^release-([\\d.]+)$",
+                        "is-main-source": true
+                    }
                 }
             ]
         }
