@@ -279,8 +279,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/0b/e8/faae4f961991ad1c0c0aca0a5fa16aa88f42d040f05853d1fb1697e2cee2/fasteners-0.16.2.tar.gz",
-                    "sha256": "2fa2ca17a4fa0510ff63e0a091ab58fdd1bcdbab82e08d4e449b85ff086fa68e",
+                    "url": "https://files.pythonhosted.org/packages/28/e4/2888d41cdbd405828ccdb9a8536c5919939c2f4c6ab9b2ba63e9bd2570d5/fasteners-0.16.3.tar.gz",
+                    "sha256": "b1ab4e5adfbc28681ce44b3024421c4f567e705cc3963c732bf1cba3348307de",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "fasteners"
