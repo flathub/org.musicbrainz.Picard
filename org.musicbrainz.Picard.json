@@ -96,12 +96,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/f8/b2/fcd5e964eefce0737512fb4ea263308769c671c3b1b9b1e380a5008ffef0/sip-6.1.1.tar.gz",
-                    "sha256": "52d25af2fcd764c4e15cc9cd1350bdb0e63f52dfa2aa3c5e7679af7fde9f7e20",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "sip"
-                    }
+                    "url": "https://files.pythonhosted.org/packages/33/e9/27730ac17713c0a80d81d8f3bb56213f1549d96f9dc183fd16a7eec6287c/sip-5.5.0.tar.gz",
+                    "sha256": "5d024c419b30fea8a6de8c71a560c7ab0bc3c221fbfb14d55a5b865bd58eaac5"
                 }
             ]
         },
@@ -146,9 +142,38 @@
         },
         {
             "name": "pyqt",
-            "buildsystem": "simple",
-            "build-commands": [
-                ". ${FLATPAK_BUILDER_BUILDDIR}/build"
+            "build-options": {
+                "env": [
+                    "QMAKEPATH=/app/lib"
+                ],
+                "arch": {
+                    "aarch64": {
+                        "config-opts": [
+                            "--disable-feature=PyQt_Desktop_OpenGL"
+                        ]
+                    }
+                }
+            },
+            "config-opts": [
+                "--concatenate",
+                "--confirm-license",
+                "--verbose",
+                "--bindir=/app/bin",
+                "--destdir=/app/lib/python3.8/site-packages",
+                "--enable=QtCore",
+                "--enable=QtDBus",
+                "--enable=QtGui",
+                "--enable=QtMultimedia",
+                "--enable=QtNetwork",
+                "--enable=QtWidgets",
+                "--no-python-dbus",
+                "--no-designer-plugin",
+                "--no-docstrings",
+                "--no-sip-files",
+                "--no-qml-plugin",
+                "--no-tools",
+                "QMAKE_CFLAGS_RELEASE='-I/usr/include/python3.8/'",
+                "QMAKE_CXXFLAGS_RELEASE='-I/usr/include/python3.8/'"
             ],
             "sources": [
                 {
@@ -161,9 +186,12 @@
                     }
                 },
                 {
-                    "type": "file",
-                    "path": "pyqt-build",
-                    "dest-filename": "build"
+                    "type": "script",
+                    "dest-filename": "configure",
+                    "commands": [
+                        "processed=`sed -e 's|prefix|sysroot|' <<< $@`",
+                        "python3 configure.py $processed"
+                    ]
                 }
             ],
             "cleanup": [
