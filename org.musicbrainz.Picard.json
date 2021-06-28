@@ -164,6 +164,16 @@
                     "type": "file",
                     "path": "pyqt-build",
                     "dest-filename": "build"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "echo '[tool.sip.bindings.QtGui]' >> pyproject.toml",
+                        "echo 'disabled-features = [\"PyQt_Desktop_OpenGL\"]' >> pyproject.toml"
+                    ],
+                    "only-arches": [
+                        "aarch64"
+                    ]
                 }
             ],
             "cleanup": [

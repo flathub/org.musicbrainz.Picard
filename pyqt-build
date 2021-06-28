@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 PYTHON_VERSION=$(${PYTHON} -c 'import sys; print(sys.version[:3])')
 
@@ -8,8 +8,9 @@ sip-install \
     --confirm-license \
     --debug \
     --verbose \
-    --build-dir=${FLATPAK_BUILDER_BUILDDIR}/tmp \
-    --target-dir=${FLATPAK_DEST}/lib/python${PYTHON_VERSION}/site-packages \
+    --jobs="${FLATPAK_BUILDER_N_JOBS}" \
+    --build-dir="${FLATPAK_BUILDER_BUILDDIR}/tmp" \
+    --target-dir="${FLATPAK_DEST}/lib/python${PYTHON_VERSION}/site-packages" \
     --enable=QtCore \
     --enable=QtDBus \
     --enable=QtGui \
