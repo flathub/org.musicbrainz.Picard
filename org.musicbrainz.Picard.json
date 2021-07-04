@@ -371,7 +371,7 @@
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "${PYTHON} setup.py install --prefix=${FLATPAK_DEST} --disable-autoupdate"
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} --install-option='--disable-autoupdate' ."
             ],
             "sources": [
                 {
