@@ -38,7 +38,7 @@
             "name": "python-pyparsing",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -55,7 +55,7 @@
             "name": "python-packaging",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -72,7 +72,7 @@
             "name": "python-toml",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -89,7 +89,7 @@
             "name": "sip",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -110,7 +110,7 @@
             "name": "pyqt-sip",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -128,7 +128,7 @@
             "name": "pyqt-builder",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -232,7 +232,7 @@
             "name": "python-discid",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -250,7 +250,7 @@
             "name": "python-setuptools-scm",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -267,7 +267,7 @@
             "name": "python-dateutil",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -285,7 +285,7 @@
             "name": "python-fasteners",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -303,7 +303,7 @@
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -325,7 +325,7 @@
             "name": "bpm-plugin-dep-numpy",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -350,7 +350,7 @@
             "name": "bpm-plugin-dep-aubio",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
