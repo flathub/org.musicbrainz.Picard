@@ -29,7 +29,8 @@
     "build-options": {
         "env": {
             "PYTHON": "/usr/bin/python3",
-            "PIP": "/usr/bin/pip3"
+            "PIP": "/usr/bin/pip3",
+            "PIP_DISABLE_PIP_VERSION_CHECK": "1"
         }
     },
     "modules": [
@@ -37,7 +38,7 @@
             "name": "python-pyparsing",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -54,7 +55,7 @@
             "name": "python-packaging",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -71,7 +72,7 @@
             "name": "python-toml",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -88,7 +89,7 @@
             "name": "sip",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -109,7 +110,7 @@
             "name": "pyqt-sip",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -127,7 +128,7 @@
             "name": "pyqt-builder",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -135,8 +136,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/00/a4/67939cced6487b1856dfda5cafa4e7eb179df917f4964918a202c8ba46d3/PyQt-builder-1.10.1.tar.gz",
-                    "sha256": "967b0c7bac0331597e9f8c5b336660f173a9896830b721d6d025e14bde647e17",
+                    "url": "https://files.pythonhosted.org/packages/27/c2/9fcaf0f4eb96dc06dc38ca66e4f1bb890b9852f62b93069b81646f7bff65/PyQt-builder-1.10.3.tar.gz",
+                    "sha256": "6ade47445b7d8c08eb96e91ebda5f8b3494b3e7a9da2be343b9d0704419cb5c7",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt-builder"
@@ -231,7 +232,7 @@
             "name": "python-discid",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -249,7 +250,7 @@
             "name": "python-setuptools-scm",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "cleanup": [
                 "*"
@@ -266,7 +267,7 @@
             "name": "python-dateutil",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -284,7 +285,7 @@
             "name": "python-fasteners",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -302,7 +303,7 @@
             "name": "mutagen",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -324,7 +325,7 @@
             "name": "bpm-plugin-dep-numpy",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -349,7 +350,7 @@
             "name": "bpm-plugin-dep-aubio",
             "buildsystem": "simple",
             "build-commands": [
-                "${PIP} install --no-deps --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
@@ -370,7 +371,7 @@
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "${PYTHON} setup.py install --prefix=${FLATPAK_DEST} --disable-autoupdate"
+                "${PIP} install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} --install-option='--disable-autoupdate' ."
             ],
             "sources": [
                 {
