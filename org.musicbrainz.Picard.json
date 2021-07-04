@@ -29,7 +29,8 @@
     "build-options": {
         "env": {
             "PYTHON": "/usr/bin/python3",
-            "PIP": "/usr/bin/pip3"
+            "PIP": "/usr/bin/pip3",
+            "PIP_DISABLE_PIP_VERSION_CHECK": "1"
         }
     },
     "modules": [
