@@ -136,8 +136,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/5e/21/ef20d55c3804a896530099097cadc304e204cf26ead16f04c9e6a07f0fa9/PyQt-builder-1.12.0.tar.gz",
-                    "sha256": "454b4d49a69683d61df855ca0dc4278e2c2d663ca2fad0a0a250497030da9186",
+                    "url": "https://files.pythonhosted.org/packages/63/9b/e7cd8c57cd38df3bf8e95750257f10703dcab15ef9050c0dc03259746e87/PyQt-builder-1.12.1.tar.gz",
+                    "sha256": "9a71e9cac134702467bd93ed9c7a5a47dc4386d93501bdcafb14cd08b3041d40",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt-builder"
