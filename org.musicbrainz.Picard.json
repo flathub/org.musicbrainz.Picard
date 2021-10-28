@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/ed/74/57851ed1cd8d996bbb3103b17798d59ddda3f7f8245b826c01aadfc3d66c/sip-6.3.1.tar.gz",
-                    "sha256": "2f9cd6ce0e19226d53d62ad6ba81a62f624626f14924724eab2a23390d4dc684",
+                    "url": "https://files.pythonhosted.org/packages/c4/de/76c2927ea8f74dc4909c9affeba4c0191c43a4aefbe2118cc69b2cbd8461/sip-6.4.0.tar.gz",
+                    "sha256": "42ec368520b8da4a0987218510b1b520b4981e4405086c1be384733affc2bcb0",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "sip"
@@ -136,8 +136,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/63/9b/e7cd8c57cd38df3bf8e95750257f10703dcab15ef9050c0dc03259746e87/PyQt-builder-1.12.1.tar.gz",
-                    "sha256": "9a71e9cac134702467bd93ed9c7a5a47dc4386d93501bdcafb14cd08b3041d40",
+                    "url": "https://files.pythonhosted.org/packages/8b/5f/1bd49787262ddce37b826ef49dcccf5a9970facf0ed363dee5ee233e681d/PyQt-builder-1.12.2.tar.gz",
+                    "sha256": "f62bb688d70e0afd88c413a8d994bda824e6cebd12b612902d1945c5a67edcd7",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt-builder"
