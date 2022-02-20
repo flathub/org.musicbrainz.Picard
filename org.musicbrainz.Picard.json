@@ -13,8 +13,7 @@
         "--device=all",
         "--filesystem=home",
         "--filesystem=xdg-music",
-        "--filesystem=/tmp",
-        "--talk-name=org.a11y.Bus"
+        "--filesystem=/tmp"
     ],
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
