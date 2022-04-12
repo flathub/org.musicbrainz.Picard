@@ -114,8 +114,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/c0/86/6b60c6a1b1d10524ed50fc4c6a2989492512bd46292a711318a53b243774/PyQt5_sip-12.9.1.tar.gz",
-                    "sha256": "2f24f299b44c511c23796aafbbb581bfdebf78d0905657b7cee2141b4982030e",
+                    "url": "https://files.pythonhosted.org/packages/11/83/2bb82a8d91cd2965fe7b1ee7a1a08099a9a33dbbda55e6a438df86d5a1d6/PyQt5_sip-12.10.0.tar.gz",
+                    "sha256": "399b4a761261e47d71e5e1dc3e6255f074e127aed73f691cbe8c9065f8cff5f1",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt5-sip"
