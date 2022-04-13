@@ -96,8 +96,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/de/c1/9ac5596c10f6ce28abc1849ed1b6299b3953af0b6ff21e227024991a517e/sip-6.5.1.tar.gz",
-                    "sha256": "204f0240db8999a749d638a987b351861843e69239b811ec3d1881412c3706a6",
+                    "url": "https://files.pythonhosted.org/packages/86/54/9d95750323c60c7739c48fe080324c23907fdd3aa76f86780f11b0d0f8bb/sip-6.6.0.tar.gz",
+                    "sha256": "00ee0197e46ca232e58c5600ec99a6b3d613673dda1666797fb936b71e4ae70b",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "sip"
@@ -114,8 +114,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/c0/86/6b60c6a1b1d10524ed50fc4c6a2989492512bd46292a711318a53b243774/PyQt5_sip-12.9.1.tar.gz",
-                    "sha256": "2f24f299b44c511c23796aafbbb581bfdebf78d0905657b7cee2141b4982030e",
+                    "url": "https://files.pythonhosted.org/packages/a3/82/08a09deda701feb930aa6462f2f22e07cbcb9aa7c1ef361a090221b4587e/PyQt5_sip-12.10.1.tar.gz",
+                    "sha256": "97e008795c453488f51a5c97dbff29cda7841afb1ca842c9e819d8e6cc0ae724",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt5-sip"
