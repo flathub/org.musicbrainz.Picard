@@ -324,8 +324,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/1d/8e/01bdcfdbb352daaba8ea406d9df149c5bba7dbf70f908d4fa4c269fe6a08/PyJWT-2.3.0.tar.gz",
-                    "sha256": "b888b4d56f06f6dcd777210c334e69c737be74755d3e5e9ee3fe67dc18a0ee41",
+                    "url": "https://files.pythonhosted.org/packages/d8/6b/6287745054dbcccf75903630346be77d4715c594402cec7c2518032416c2/PyJWT-2.4.0.tar.gz",
+                    "sha256": "d42908208c699b3b973cbeb01a969ba6a96c821eefb1c5bfe4c390c01d67abba",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "PyJWT"
