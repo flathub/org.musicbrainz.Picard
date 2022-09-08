@@ -1,7 +1,7 @@
 {
     "id": "org.musicbrainz.Picard",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-21.08",
+    "runtime-version": "5.15-22.08",
     "sdk": "org.kde.Sdk",
     "command": "picard",
     "finish-args": [
@@ -18,7 +18,7 @@
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "21.08",
+            "version": "22.08",
             "add-ld-path": "."
         }
     },
