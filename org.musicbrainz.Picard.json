@@ -45,8 +45,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-2.4.7.tar.gz",
-                    "sha256": "c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"
+                    "url": "https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.0.9.tar.gz",
+                    "sha256": "2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb"
                 }
             ]
         },
@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/p/packaging/packaging-20.9.tar.gz",
-                    "sha256": "5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5"
+                    "url": "https://files.pythonhosted.org/packages/source/p/packaging/packaging-21.3.tar.gz",
+                    "sha256": "dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb"
                 }
             ]
         },
@@ -278,8 +278,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-6.0.1.tar.gz",
-                    "sha256": "d1925a69cb07e9b29416a275b9fadb009a23c148ace905b2fb220649a6c18e92"
+                    "url": "https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-7.0.5.tar.gz",
+                    "sha256": "031e13af771d6f892b941adb6ea04545bbf91ebc5ce68c78aaf3fff6e1fb4844"
                 }
             ]
         },
@@ -387,7 +387,11 @@
                 {
                     "type": "archive",
                     "url": "https://files.pythonhosted.org/packages/64/4a/b008d1f8a7b9f5206ecf70a53f84e654707e7616a771d84c05151a4713e9/numpy-1.22.3.zip",
-                    "sha256": "dbc7601a3b7472d559dc7b933b18b4b66f9aa7452c120e87dfb33d02008c8a18"
+                    "sha256": "dbc7601a3b7472d559dc7b933b18b4b66f9aa7452c120e87dfb33d02008c8a18",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "numpy"
+                    }
                 }
             ],
             "cleanup": [
