@@ -216,6 +216,10 @@
                         "stable-only": true,
                         "url-template": "https://github.com/acoustid/chromaprint/releases/download/v$version/chromaprint-$version.tar.gz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/chromaprint/support-ffmpeg5.patch"
                 }
             ],
             "cleanup": [
