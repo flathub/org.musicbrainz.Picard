@@ -1,0 +1,18 @@
+{
+    "name": "python3-discid",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"discid\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/d5/fa/c8856ae3eb53393445d84589afbd49ded85527563a7c0457f4e967d5b7af/discid-1.2.0.tar.gz",
+            "sha256": "cd9630bc53f5566df92819641040226e290b2047573f2c74a6e92b8eed9e86b9",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "discid"
+            }
+        }
+    ]
+}

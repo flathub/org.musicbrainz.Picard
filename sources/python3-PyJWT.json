@@ -1,0 +1,19 @@
+{
+    "name": "python3-PyJWT",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"PyJWT\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/37/82/43382713811f0ddd9fff1ed778af6818cc2080ccd425e3eba540be690fb6/PyJWT-2.5.0-py3-none-any.whl",
+            "sha256": "8d82e7087868e94dd8d7d418e5088ce64f7daab4b36db654cbaedb46f9d1ca80",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "PyJWT",
+                "packagetype": "bdist_wheel"
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "python3-fasteners",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"fasteners\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/bc/a2/7d35ba2c8d9963398fcec49cd814e50a6b920d213928f06fdbbf8aa3289b/fasteners-0.18-py3-none-any.whl",
+            "sha256": "1d4caf5f8db57b0e4107d94fd5a1d02510a450dced6ca77d1839064c1bacf20c",
+            "x-checker-data": {
+                "type": "pypi",
+                "name": "fasteners",
+                "packagetype": "bdist_wheel"
+            }
+        }
+    ]
+}
