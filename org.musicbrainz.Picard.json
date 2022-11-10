@@ -416,6 +416,71 @@
             ]
         },
         {
+            "name": "rsgain",
+            "buildsystem": "cmake-ninja",
+            "build-options": {
+                "ldflags": "-lpthread",
+                "cxxflags": "-lpthread"
+            },
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/complexlogic/rsgain/releases/download/v3.1/rsgain-3.1-source.tar.xz",
+                    "sha256": "c1ab2c2162c1046786254090f939d60da87994efad5715dde68aa5247f33eaa3"
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libebur128",
+                    "buildsystem": "cmake-ninja",
+                    "cleanup": [
+                        "/include",
+                        "/lib/pkgconfig"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/jiixyj/libebur128/archive/refs/tags/v1.2.6.tar.gz",
+                            "sha256": "baa7fc293a3d4651e244d8022ad03ab797ca3c2ad8442c43199afe8059faa613"
+                        }
+                    ]
+                },
+                {
+                    "name": "inih",
+                    "buildsystem": "meson",
+                    "cleanup": [
+                        "/include",
+                        "/lib/pkgconfig"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/benhoyt/inih/archive/refs/tags/r56.zip",
+                            "sha256": "22c9902ebe707a4d186b79abdf05ab1ab45e09b840c9fd9eb233244fbaabf3e8"
+                        }
+                    ]
+                },
+                {
+                    "name": "fmt",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DFMT_TEST=off",
+                        "-DFMT_DOC=off"
+                    ],
+                    "cleanup": [
+                        "*"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/fmtlib/fmt/releases/download/9.0.0/fmt-9.0.0.zip",
+                            "sha256": "fc96dd2d2fdf2bded630787adba892c23cb9e35c6fd3273c136b0c57d4651ad6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
