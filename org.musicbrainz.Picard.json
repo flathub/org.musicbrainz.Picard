@@ -229,8 +229,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/metabrainz/libdiscid/archive/v0.6.3.tar.gz",
-                    "sha256": "df7b19a125e31bb15bb0cebf338fb7a44cc20b76adf5de1798315a2056ff2d5a",
+                    "url": "https://github.com/metabrainz/libdiscid/archive/v0.6.4.tar.gz",
+                    "sha256": "c581baeabaf6e410398005645d66acaaa41ff2cab272c267a2d6839e41486ebb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1592,
