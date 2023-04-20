@@ -113,8 +113,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/f1/ba/19f9cb16416a3c98bd5969b1bd9bf3c92dd278788d8d949ed66b8e0edf0d/sip-6.7.7.tar.gz",
-                    "sha256": "dee9c06fa8ae6d441a401f922867fc6196edda274eebd9fbfec54f0769c2a9e2",
+                    "url": "https://files.pythonhosted.org/packages/48/75/98987181e897ef378d6c239ee733328a7264a41f2d8263e61d7b7c4c0909/sip-6.7.9.tar.gz",
+                    "sha256": "35d51fc10f599d3696abb50f29d068ad04763df7b77808c76b74597660f99b17",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "sip"
@@ -131,8 +131,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/d2/f4/4c3e5fc1584f5a2964cfc89bf420cfcc59aba0b1f2d08446e2b491a21ed5/PyQt5_sip-12.11.1.tar.gz",
-                    "sha256": "97d3fbda0f61edb1be6529ec2d5c7202ae83aee4353e4b264a159f8c9ada4369",
+                    "url": "https://files.pythonhosted.org/packages/c1/61/4055e7a0f36339964956ff415e36f4abf82561904cc49c021da32949fc55/PyQt5_sip-12.12.1.tar.gz",
+                    "sha256": "8fdc6e0148abd12d977a1d3828e7b79aae958e83c6cb5adae614916d888a6b10",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt5-sip"
@@ -152,8 +152,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/21/6c/685981114cb350f2f8e4a0827aa7f60f142e15816aa48f3204e5a1e2578c/PyQt-builder-1.14.1.tar.gz",
-                    "sha256": "83bc3e300aff8b41405804b6a9c2913389ab59c48ad9f0cb8584a6ef73bca502",
+                    "url": "https://files.pythonhosted.org/packages/ee/37/06bc9491c7f84ca776658106a59d3064b1c4c7533a35d547e85fc1e8087f/PyQt-builder-1.15.0.tar.gz",
+                    "sha256": "a90553703897eb41e27c2f1abd31fb9ed304c32ec3271b380015b54ea9762ddd",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt-builder"
