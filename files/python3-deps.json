@@ -156,33 +156,6 @@
                 "/bin",
                 "/share/man/man1"
             ]
-        },
-        {
-            "name": "python3-aubio",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"aubio\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/cd/80/302d89240603e5347c7f8026c8b02c59f8dfaec66c91a743d82de7c86006/aubio-0.4.9.tar.gz",
-                    "sha256": "df1244f6c4cf5bea382c8c2d35aa43bc31f4cf631fe325ae3992c219546a4202",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "aubio"
-                    }
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a0/41/8f53eff8e969dd8576ddfb45e7ed315407d27c7518ae49418be8ed532b07/numpy-1.25.2.tar.gz",
-                    "sha256": "fd608e19c8d7c55021dffd43bfe5492fab8cc105cc8986f813f8c3c048b38760"
-                }
-            ],
-            "cleanup": [
-                "/bin",
-                "/share/man/man1"
-            ]
         }
     ]
 }
