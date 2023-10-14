@@ -57,8 +57,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/bc/a2/7d35ba2c8d9963398fcec49cd814e50a6b920d213928f06fdbbf8aa3289b/fasteners-0.18-py3-none-any.whl",
-                    "sha256": "1d4caf5f8db57b0e4107d94fd5a1d02510a450dced6ca77d1839064c1bacf20c",
+                    "url": "https://files.pythonhosted.org/packages/61/bf/fd60001b3abc5222d8eaa4a204cd8c0ae78e75adc688f33ce4bf25b7fafa/fasteners-0.19-py3-none-any.whl",
+                    "sha256": "758819cb5d94cdedf4e836988b74de396ceacb8e2794d21f82d131fd9ee77237",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "fasteners",
