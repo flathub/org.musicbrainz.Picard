@@ -1,12 +1,12 @@
 {
     "id": "org.musicbrainz.Picard",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "6.6",
     "sdk": "org.kde.Sdk",
     "command": "picard",
     "finish-args": [
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--socket=pulseaudio",
         "--share=network",
@@ -41,11 +41,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/ee/81/fce2a475aa56c1f49707d9306b930695b6ff078c2242c9f2fd72a3214e1f/PyQt5_sip-12.13.0.tar.gz",
-                    "sha256": "7f321daf84b9c9dbca61b80e1ef37bdaffc0e93312edae2cd7da25b953971d91",
+                    "url": "https://files.pythonhosted.org/packages/98/23/e54e02a44afc357ccab1b88575b90729664164358ceffde43e4f2e549daa/PyQt6_sip-13.6.0.tar.gz",
+                    "sha256": "2486e1588071943d4f6657ba09096dc9fffd2322ad2c30041e78ea3f037b5778",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "pyqt5-sip"
+                        "name": "PyQt6-sip"
                     }
                 }
             ]
@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/c0/75/a3384eea8770c17e77821368618a5140c4ae0c37f9c05a84ef55f4807172/PyQt-builder-1.15.4.tar.gz",
-                    "sha256": "39f8c75db17d9ce17cb6bbf3df1650b5cebc1ea4e5bd73843d21cc96612b2ae1",
+                    "url": "https://files.pythonhosted.org/packages/e3/90/930091ec6bae121dd44ccaab0a59308e2b75870c6f76c23247caef68c8c8/pyqt_builder-1.16.1.tar.gz",
+                    "sha256": "25fd79248ee29779ca2d83cfd5a35f6da962c6e9711b7434182d6ef30827cb49",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt-builder"
@@ -80,11 +80,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/4d/5d/b8b6e26956ec113ad3f566e02abd12ac3a56b103fcc7e0735e27ee4a1df3/PyQt5-5.15.10.tar.gz",
-                    "sha256": "d46b7804b1b10a4ff91753f8113e5b5580d2b4462f3226288e2d84497334898a",
+                    "url": "https://files.pythonhosted.org/packages/8c/2b/6fe0409501798abc780a70cab48c39599742ab5a8168e682107eaab78fca/PyQt6-6.6.1.tar.gz",
+                    "sha256": "9f158aa29d205142c56f0f35d07784b8df0be28378d20a97bcda8bd64ffd0379",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "pyqt5"
+                        "name": "PyQt6"
                     }
                 },
                 {
@@ -119,7 +119,6 @@
                 {
                     "type": "git",
                     "url": "https://github.com/acoustid/chromaprint.git",
-                    "branch": "master",
                     "commit": "aa67c95b9e486884a6d3ee8b0c91207d8c2b0551"
                 }
             ],
@@ -250,9 +249,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.11",
-                    "commit": "36b0c7757be91a7a1fb0383cb7d8a28d9de0f4d2",
+                    "url": "https://github.com/Lctrs/picard.git",
+                    "commit": "aac51806173527477b1c8432f1f8d9c42cddd50b",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^release-([\\d.]+)$",
