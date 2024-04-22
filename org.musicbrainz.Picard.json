@@ -1,12 +1,12 @@
 {
     "id": "org.musicbrainz.Picard",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-24.08",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "picard",
     "finish-args": [
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--socket=pulseaudio",
         "--share=network",
@@ -41,11 +41,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/01/79/086b50414bafa71df494398ad277d72e58229a3d1c1b1c766d12b14c2e6d/pyqt5_sip-12.17.0.tar.gz",
-                    "sha256": "682dadcdbd2239af9fdc0c0628e2776b820e128bec88b49b8d692fe682f90b4f",
+                    "url": "https://files.pythonhosted.org/packages/90/18/0405c54acba0c8e276dd6f0601890e6e735198218d031a6646104870fe22/pyqt6_sip-13.10.0.tar.gz",
+                    "sha256": "d6daa95a0bd315d9ec523b549e0ce97455f61ded65d5eafecd83ed2aa4ae5350",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "pyqt5-sip"
+                        "name": "PyQt6-sip"
                     }
                 }
             ]
@@ -80,11 +80,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/0e/07/c9ed0bd428df6f87183fca565a79fee19fa7c88c7f00a7f011ab4379e77a/PyQt5-5.15.11.tar.gz",
-                    "sha256": "fda45743ebb4a27b4b1a51c6d8ef455c4c1b5d610c90d2934c7802b5c1557c52",
+                    "url": "https://files.pythonhosted.org/packages/32/de/102e8e66149085acf38bbf01df572a2cd53259bcd99b7d8ecef0d6b36172/pyqt6-6.9.0.tar.gz",
+                    "sha256": "6a8ff8e3cd18311bb7d937f7d741e787040ae7ff47ce751c28a94c5cddc1b4e6",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "pyqt5"
+                        "name": "PyQt6"
                     }
                 },
                 {
@@ -246,8 +246,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.13.3",
-                    "commit": "8a062c9a7c103e1abed485e62f75bdc332753311",
+                    "commit": "1a335c98be0443020d675a4f817da60d75861e49",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^release-([\\d.]+)$",
