@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl",
-            "sha256": "8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7",
+            "url": "https://files.pythonhosted.org/packages/08/aa/cc0199a5f0ad350994d660967a8efb233fe0416e4639146c089643407ce6/packaging-24.1-py3-none-any.whl",
+            "sha256": "5b8f2217dbdbd2f7f384c41c628544e6d52f2d0f53c6d0c3ea61aa5d1d7ff124",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "packaging",
@@ -22,8 +22,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/99/85/261c41cc709f65d5b87669f42e502d05cc544c24884121bc594ab0329d8e/sip-6.8.3.tar.gz",
-            "sha256": "888547b018bb24c36aded519e93d3e513d4c6aa0ba55b7cc1affbd45cf10762c",
+            "url": "https://files.pythonhosted.org/packages/9f/aa/8c767fc6521fa69a0632d155dc6dad82ecbd522475d60caaefb444f98abc/sip-6.8.4.tar.gz",
+            "sha256": "c8f4032f656de3fedbf81243cdbc9e9fd4064945b8c6961eaa81f03cd88554cb",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "sip"
