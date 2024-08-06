@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/ee/81/fce2a475aa56c1f49707d9306b930695b6ff078c2242c9f2fd72a3214e1f/PyQt5_sip-12.13.0.tar.gz",
-                    "sha256": "7f321daf84b9c9dbca61b80e1ef37bdaffc0e93312edae2cd7da25b953971d91",
+                    "url": "https://files.pythonhosted.org/packages/1b/15/78318d50f10062c428e97e7ce387e772616a4673c356018b905f247a6a85/PyQt5_sip-12.15.0.tar.gz",
+                    "sha256": "d23fdfcf363b5cedd9d39f8a9c5710e7d52804f5b08a58e91c638b36eafcb702",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt5-sip"
@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/c0/75/a3384eea8770c17e77821368618a5140c4ae0c37f9c05a84ef55f4807172/PyQt-builder-1.15.4.tar.gz",
-                    "sha256": "39f8c75db17d9ce17cb6bbf3df1650b5cebc1ea4e5bd73843d21cc96612b2ae1",
+                    "url": "https://files.pythonhosted.org/packages/e6/f5/daead7fd8ef3675ce55f4ef66dbe3287b0bdd74315f6b5a57718a020570b/pyqt_builder-1.16.4.tar.gz",
+                    "sha256": "4515e41ae379be2e54f88a89ecf47cd6e4cac43e862c4abfde18389c2666afdf",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt-builder"
@@ -80,8 +80,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/4d/5d/b8b6e26956ec113ad3f566e02abd12ac3a56b103fcc7e0735e27ee4a1df3/PyQt5-5.15.10.tar.gz",
-                    "sha256": "d46b7804b1b10a4ff91753f8113e5b5580d2b4462f3226288e2d84497334898a",
+                    "url": "https://files.pythonhosted.org/packages/0e/07/c9ed0bd428df6f87183fca565a79fee19fa7c88c7f00a7f011ab4379e77a/PyQt5-5.15.11.tar.gz",
+                    "sha256": "fda45743ebb4a27b4b1a51c6d8ef455c4c1b5d610c90d2934c7802b5c1557c52",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt5"
@@ -251,8 +251,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.11",
-                    "commit": "36b0c7757be91a7a1fb0383cb7d8a28d9de0f4d2",
+                    "tag": "release-2.12",
+                    "commit": "d375fc17930e1c1938f86d40b529a11dd5fa47d0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^release-([\\d.]+)$",
