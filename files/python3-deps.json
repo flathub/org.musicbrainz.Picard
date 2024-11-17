@@ -80,8 +80,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/79/84/0fdf9b18ba31d69877bd39c9cd6052b47f3761e9910c15de788e519f079f/PyJWT-2.9.0-py3-none-any.whl",
-                    "sha256": "3b02fb0f44517787776cf48f2ae25d8e14f300e6d7545a4315cee571a415e850",
+                    "url": "https://files.pythonhosted.org/packages/6f/1d/ef9b066e7ef60494c94173dc9f0b9adf5d9ec5f888109f5c669f53d4144b/PyJWT-2.10.0-py3-none-any.whl",
+                    "sha256": "543b77207db656de204372350926bed5a86201c4cbff159f623f79c7bb487a15",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "PyJWT",
