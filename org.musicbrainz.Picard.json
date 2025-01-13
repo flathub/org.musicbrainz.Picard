@@ -4,6 +4,8 @@
     "runtime-version": "5.15-23.08",
     "sdk": "org.kde.Sdk",
     "command": "picard",
+    "base": "com.riverbankcomputing.PyQt.BaseApp",
+    "base-version": "5.15-23.08",
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
@@ -23,89 +25,18 @@
         }
     },
     "cleanup-commands": [
-        "mkdir -p /app/lib/ffmpeg"
+        "mkdir -p /app/lib/ffmpeg",
+        "/app/cleanup-BaseApp.sh"
     ],
     "build-options": {
         "env": {
-            "PIP_DISABLE_PIP_VERSION_CHECK": "1"
+            "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+            "BASEAPP_REMOVE_WEBENGINE":"1"
         }
     },
     "modules": [
-        "files/python3-build-deps.json",
         {
-            "name": "pyqt-sip",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/3c/cd/f6f957107447bc53e398f6149f55a7f335c434f201e77dcfb8a3c20dc42c/pyqt5_sip-12.16.1.tar.gz",
-                    "sha256": "8c831f8b619811a32369d72339faa50ae53a963f5fdfa4d71f845c63e9673125",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "pyqt5-sip"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "pyqt-builder",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
-            ],
-            "cleanup": [
-                "*"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/4d/07/da6140518dea6cf99b5dd5eac928f93813d7b2dd9f42ff9c193421d2b171/pyqt_builder-1.17.1.tar.gz",
-                    "sha256": "457dcd6a1408ea4bf1264e3511c734d53451ae8a3905e98982d50f7b3fdab724",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "pyqt-builder"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "pyqt",
-            "buildsystem": "simple",
-            "build-commands": [
-                ". ${FLATPAK_BUILDER_BUILDDIR}/build"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/0e/07/c9ed0bd428df6f87183fca565a79fee19fa7c88c7f00a7f011ab4379e77a/PyQt5-5.15.11.tar.gz",
-                    "sha256": "fda45743ebb4a27b4b1a51c6d8ef455c4c1b5d610c90d2934c7802b5c1557c52",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "pyqt5"
-                    }
-                },
-                {
-                    "type": "file",
-                    "path": "pyqt-build",
-                    "dest-filename": "build"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "echo '[tool.sip.bindings.QtGui]' >> pyproject.toml",
-                        "echo 'disabled-features = [\"PyQt_Desktop_OpenGL\"]' >> pyproject.toml"
-                    ],
-                    "only-arches": [
-                        "aarch64"
-                    ]
-                }
-            ],
-            "cleanup": [
-                "/bin"
-            ]
+            "name": "PyQtApp"
         },
         {
             "name": "chromaprint",
