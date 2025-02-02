@@ -17,8 +17,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/0b/b5/aafbb1f35d53ae590d5c0455edc0694a355c3dac22a88392421789c4edd1/sip-6.9.1-py3-none-any.whl",
-            "sha256": "071d8b920fdc1761330964abed829178ddb5154097b9fa4306b2fc6c6d9e57fc",
+            "url": "https://files.pythonhosted.org/packages/84/16/c696bf5f17ba76abcf9354a48785e9cd5023ab6afbc3384514fa85052e1d/sip-6.10.0-py3-none-any.whl",
+            "sha256": "5b6822f2eaa87bbf2299406a5006aa67147ff61a3c1c80f2e98307229de6a581",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "sip",
