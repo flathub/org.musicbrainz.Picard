@@ -250,8 +250,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.13.2",
-                    "commit": "f0b6669ae74921f953227154a4dea5b1f6160c7a",
+                    "tag": "release-2.13.3",
+                    "commit": "8a062c9a7c103e1abed485e62f75bdc332753311",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^release-([\\d.]+)$",
