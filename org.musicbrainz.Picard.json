@@ -1,7 +1,7 @@
 {
     "id": "org.musicbrainz.Picard",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "5.15-24.08",
     "sdk": "org.kde.Sdk",
     "command": "picard",
     "finish-args": [
@@ -18,7 +18,7 @@
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "23.08",
+            "version": "24.08",
             "add-ld-path": "."
         }
     },
@@ -155,11 +155,20 @@
                 "ldflags": "-lpthread",
                 "cxxflags": "-lpthread"
             },
+            "cleanup": [
+                "/share"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/complexlogic/rsgain/releases/download/v3.1/rsgain-3.1-source.tar.xz",
-                    "sha256": "c1ab2c2162c1046786254090f939d60da87994efad5715dde68aa5247f33eaa3"
+                    "url": "https://github.com/complexlogic/rsgain/releases/download/v3.6/rsgain-3.6-source.tar.xz",
+                    "sha256": "26d46f1240a83366e82cbc9121a467fc1dcc977c7adfb4e15c99ead6b3d07ec8",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/complexlogic/rsgain/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"rsgain-\" + $version + \"-source.taz.xz\") | .browser_download_url"
+                    }
                 }
             ],
             "modules": [
@@ -188,8 +197,14 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/benhoyt/inih/archive/refs/tags/r56.zip",
-                            "sha256": "22c9902ebe707a4d186b79abdf05ab1ab45e09b840c9fd9eb233244fbaabf3e8"
+                            "url": "https://github.com/benhoyt/inih/archive/refs/tags/r60.tar.gz",
+                            "sha256": "706aa05c888b53bd170e5d8aa8f8a9d9ccf5449dfed262d5103d1f292af26774",
+                            "x-checker-data": {
+                                "type": "json",
+                                "url": "https://api.github.com/repos/benhoyt/inih/releases/latest",
+                                "version-query": ".tag_name",
+                                "url-query": ".tarball_url"
+                            }
                         }
                     ]
                 },
@@ -206,45 +221,26 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/fmtlib/fmt/releases/download/9.0.0/fmt-9.0.0.zip",
-                            "sha256": "fc96dd2d2fdf2bded630787adba892c23cb9e35c6fd3273c136b0c57d4651ad6"
+                            "url": "https://github.com/fmtlib/fmt/releases/download/11.1.4/fmt-11.1.4.zip",
+                            "sha256": "49b039601196e1a765e81c5c9a05a61ed3d33f23b3961323d7322e4fe213d3e6",
+                            "x-checker-data": {
+                                "type": "json",
+                                "url": "https://api.github.com/repos/fmtlib/fmt/releases/latest",
+                                "version-query": ".tag_name",
+                                "url-query": ".assets[] | select(.name==\"fmt-\" + $version + \".zip\") | .browser_download_url"
+                            }
                         }
                     ]
                 }
             ]
         },
         "files/python3-deps.json",
-        {
-            "name": "python3-aubio",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --prefix=${FLATPAK_DEST} --no-build-isolation ."
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/cd/80/302d89240603e5347c7f8026c8b02c59f8dfaec66c91a743d82de7c86006/aubio-0.4.9.tar.gz",
-                    "sha256": "df1244f6c4cf5bea382c8c2d35aa43bc31f4cf631fe325ae3992c219546a4202",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "aubio"
-                    }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/aubio/support-ffmpeg5.patch"
-                }
-            ],
-            "cleanup": [
-                "/bin",
-                "/share/man/man1"
-            ]
-        },
+        "files/python3-aubio.json",
         {
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "python3 setup.py install --disable-autoupdate --prefix=${FLATPAK_DEST}"
+                "pip3 install --config-settings=\"--disable-autoupdate=1\" --compile --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
             ],
             "sources": [
                 {
