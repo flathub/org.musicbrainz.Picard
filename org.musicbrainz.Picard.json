@@ -197,8 +197,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/benhoyt/inih/archive/refs/tags/r60.tar.gz",
-                            "sha256": "706aa05c888b53bd170e5d8aa8f8a9d9ccf5449dfed262d5103d1f292af26774",
+                            "url": "https://api.github.com/repos/benhoyt/inih/tarball/r60",
+                            "sha256": "5085eb943ff3ae74cc805d5ffea328a0f1ee13a804a8f563aa62e8be7c46c2e0",
                             "x-checker-data": {
                                 "type": "json",
                                 "url": "https://api.github.com/repos/benhoyt/inih/releases/latest",
