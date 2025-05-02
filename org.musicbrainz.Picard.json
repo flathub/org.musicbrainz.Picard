@@ -200,10 +200,10 @@
                             "url": "https://github.com/benhoyt/inih/archive/refs/tags/r60.tar.gz",
                             "sha256": "706aa05c888b53bd170e5d8aa8f8a9d9ccf5449dfed262d5103d1f292af26774",
                             "x-checker-data": {
-                                "type": "json",
-                                "url": "https://api.github.com/repos/benhoyt/inih/releases/latest",
-                                "version-query": ".tag_name",
-                                "url-query": ".tarball_url"
+                                "type": "anitya",
+                                "project-id": 11600,
+                                "stable-only": true,
+                                "url-template": "https://github.com/benhoyt/inih/archive/refs/tags/r$version.tar.gz"
                             }
                         }
                     ]
