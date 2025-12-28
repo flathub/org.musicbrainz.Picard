@@ -250,7 +250,7 @@
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --config-settings=\"--disable-autoupdate=1\" --compile --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "pip3 install --compile --config-settings=\"--global-option=build --disable-autoupdate --localedir=${FLATPAK_DEST}/share/locale\" --no-build-isolation --prefix=${FLATPAK_DEST} --verbose ."
             ],
             "sources": [
                 {
