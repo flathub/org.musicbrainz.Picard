@@ -1,7 +1,7 @@
 {
     "id": "org.musicbrainz.Picard",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-24.08",
+    "runtime-version": "5.15-25.08",
     "sdk": "org.kde.Sdk",
     "command": "picard",
     "finish-args": [
@@ -18,7 +18,7 @@
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "24.08",
+            "version": "25.08",
             "add-ld-path": "."
         }
     },
@@ -117,13 +117,20 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/acoustid/chromaprint.git",
-                    "commit": "aa67c95b9e486884a6d3ee8b0c91207d8c2b0551"
+                    "type": "archive",
+                    "url": "https://github.com/acoustid/chromaprint/releases/download/v1.6.0/chromaprint-1.6.0.tar.gz",
+                    "sha256": "9d33482e56a1389a37a0d6742c376139fa43e3b8a63d29003222b93db2cb40da",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 286,
+                        "stable-only": true,
+                        "url-template": "https://github.com/acoustid/chromaprint/releases/download/v$version/chromaprint-$version.tar.gz"
+                    }
                 }
             ],
             "cleanup": [
                 "/include",
+                "/lib/cmake",
                 "/lib/pkgconfig"
             ]
         },
@@ -178,6 +185,9 @@
                     "cleanup": [
                         "/include",
                         "/lib/pkgconfig"
+                    ],
+                    "config-opts": [
+                        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
                     ],
                     "sources": [
                         {
@@ -240,7 +250,7 @@
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --config-settings=\"--disable-autoupdate=1\" --compile --no-build-isolation --verbose --prefix=${FLATPAK_DEST} ."
+                "pip3 install --compile --config-settings=\"--global-option=build --disable-autoupdate --localedir=${FLATPAK_DEST}/share/locale\" --no-build-isolation --prefix=${FLATPAK_DEST} --verbose ."
             ],
             "sources": [
                 {
