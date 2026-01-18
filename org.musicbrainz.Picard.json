@@ -15,16 +15,6 @@
         "--filesystem=xdg-music",
         "--filesystem=/tmp"
     ],
-    "add-extensions": {
-        "org.freedesktop.Platform.ffmpeg-full": {
-            "directory": "lib/ffmpeg",
-            "version": "25.08",
-            "add-ld-path": "."
-        }
-    },
-    "cleanup-commands": [
-        "mkdir -p /app/lib/ffmpeg"
-    ],
     "build-options": {
         "env": {
             "PIP_DISABLE_PIP_VERSION_CHECK": "1"
