@@ -125,8 +125,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6f/01/c26ce75ba460d5cd503da9e13b21a33804d38c2165dec7b716d06b13010c/pyjwt-2.11.0-py3-none-any.whl",
-                    "sha256": "94a6bde30eb5c8e04fee991062b534071fd1439ef58d2adc9ccb823e7bcd0469",
+                    "url": "https://files.pythonhosted.org/packages/15/70/70f895f404d363d291dcf62c12c85fdd47619ad9674ac0f53364d035925a/pyjwt-2.12.0-py3-none-any.whl",
+                    "sha256": "9bb459d1bdd0387967d287f5656bf7ec2b9a26645d1961628cda1764e087fd6e",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "PyJWT",
