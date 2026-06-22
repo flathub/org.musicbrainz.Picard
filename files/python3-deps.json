@@ -170,8 +170,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/b0/7a/620f945b96be1f6ee357d211d5bf74ab1b7fe72a9f1525aafbfe3aee6875/mutagen-1.47.0-py3-none-any.whl",
-                    "sha256": "edd96f50c5907a9539d8e5bba7245f62c9f520aef333d13392a79a4f70aca719",
+                    "url": "https://files.pythonhosted.org/packages/39/1f/b62af7c661850ded4a550143e816613bd057b8c38fed534a6142735a77d0/mutagen-1.48.0-py3-none-any.whl",
+                    "sha256": "60a48d3e30173f728170fb0503f66b26026bf7629afb12546b18395c5cdf0bd6",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "mutagen",
