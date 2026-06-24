@@ -57,8 +57,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/29/64/ca6cb42642108af91af780913b97765c9ef0c19c7e603b1eb50746659780/discid-1.4.0.tar.gz",
-                    "sha256": "50fd3db445caeb44b9f7763777ed49688c3cf4633da99d340c25b919496ba8b5",
+                    "url": "https://files.pythonhosted.org/packages/b6/03/883d9e6f86c15c2844b0f068221e24906ae93be8ee50f0b3f16ce444a88f/discid-1.4.1.tar.gz",
+                    "sha256": "1410b8f2699c6ed063e2857562e0e1e3eef1ce5b4bdd7eb6a911500068f83184",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "discid"
