@@ -12,8 +12,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/1d/0b/da4851b1e2d9c40c9bd74c0abd94510a7d797da9ccde0a90e8953751ed4a/pyproject_metadata-0.11.0-py3-none-any.whl",
-                    "sha256": "85bbecca8694e2c00f63b492c96921d6c228454057c88e7c352b2077fcaa4096",
+                    "url": "https://files.pythonhosted.org/packages/b5/d4/b142ab15196f17671153781f4d99552276e59535793a7e1f5a1dcc549f75/pyproject_metadata-0.12.0-py3-none-any.whl",
+                    "sha256": "71ef11a4316a94441f7848619ad58dd6f8f4231cf05c816f1feb5a05dba7f392",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyproject-metadata",
