@@ -35,8 +35,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/20/56/10a88e00039537d74bd420f0457c52ab8f58a1af56126e3b9f1b1c8c4724/charset_normalizer-3.4.8.tar.gz",
-                    "sha256": "d9bf144d6faf12c70d58e47f7512992ae2882b820031d6cef68152deb645bf2d",
+                    "url": "https://files.pythonhosted.org/packages/bd/2a/23f34ec9d04624958e137efdc394888716353190e75f25dd22c7a2c7a8aa/charset_normalizer-3.4.9.tar.gz",
+                    "sha256": "673611bbd43f0810bec0b0f028ddeaaa501190339cac411f347ac76917c3ae7b",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "charset-normalizer"
