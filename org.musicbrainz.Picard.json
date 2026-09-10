@@ -161,8 +161,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/metabrainz/picard/releases/download/release-3.0.0rc1/picard-3.0.0rc1.tar.gz",
-                    "sha256": "3b9dd717a5f012c4d2f0083045f195f928e0610aa65a313a590006c31a2055d8",
+                    "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-3.0.tar.gz",
+                    "sha256": "3cd467da6cab9549da5a9716695af2ef3cfb89c82456fec8404e90ee3cf47eb3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3633,
