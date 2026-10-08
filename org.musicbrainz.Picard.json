@@ -161,8 +161,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-3.0.tar.gz",
-                    "sha256": "3cd467da6cab9549da5a9716695af2ef3cfb89c82456fec8404e90ee3cf47eb3",
+                    "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-3.0.1.tar.gz",
+                    "sha256": "a18fea920b3a76d337460f25a7b27673742f8c482306e63b884d9cfba524b338",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3633,
