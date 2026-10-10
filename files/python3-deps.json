@@ -35,8 +35,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e5/3f/143b048436775b0f76ac3eec145c019e8173ccc2885c8f20319b996d5e83/charset_normalizer-3.5.1.tar.gz",
-                    "sha256": "6117b84ea48435e5356dc737f5121485c30920ba43375fa7b434fd753df0eac3",
+                    "url": "https://files.pythonhosted.org/packages/33/1c/f41d4e74c28ab327ff3acd36053f7ea506c55872d7a90b0fa71aa3ab0c89/charset_normalizer-3.5.2.tar.gz",
+                    "sha256": "39de2a259fc954455c57274dc94c79d5842774e1247a016aff30bc0efed0f4ef",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "charset-normalizer"
@@ -94,29 +94,6 @@
             ]
         },
         {
-            "name": "python3-fasteners",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"fasteners\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/51/ac/e5d886f892666d2d1e5cb8c1a41146e1d79ae8896477b1153a21711d3b44/fasteners-0.20-py3-none-any.whl",
-                    "sha256": "9422c40d1e350e4259f509fb2e608d6bc43c0136f79a00db1b49046029d0b3b7",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "fasteners",
-                        "packagetype": "bdist_wheel"
-                    }
-                }
-            ],
-            "cleanup": [
-                "/bin",
-                "/share/man/man1"
-            ]
-        },
-        {
             "name": "python3-PyJWT",
             "buildsystem": "simple",
             "build-commands": [
@@ -125,8 +102,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a3/5e/ecf12fdb62546d64385c158514e9b2b671f7832108ef2ecd2020ce0af2d1/pyjwt-2.13.0-py3-none-any.whl",
-                    "sha256": "66adcc2aff09b3f1bbd95fc1e1577df8ac8723c978552fd43304c8a290ac5728",
+                    "url": "https://files.pythonhosted.org/packages/50/ca/44de4e75f8aadc457f0634be3b542815078ded46dca30efb960edeecad6e/pyjwt-2.15.1-py3-none-any.whl",
+                    "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "PyJWT",
@@ -182,6 +159,150 @@
             "cleanup": [
                 "/bin",
                 "/share/man/man1"
+            ]
+        },
+        {
+            "name": "python3-Markdown",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"Markdown\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/64/69/4a5af2bc115a9a33fefe51709749de8262be3f9ba063d1753a837cdbc49c/markdown-3.10.3-py3-none-any.whl",
+                    "sha256": "fa6c92a00a4a3c98b22728c64a935ae1928250ae65058a6ded814d2cc29a4cea",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "Markdown",
+                        "packagetype": "bdist_wheel"
+                    }
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/man/man1"
+            ]
+        },
+        {
+            "name": "python3-tomlkit",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"tomlkit\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/13/bc/8c13eb66537dce1d2bd3a57132902f38d0e7f5bb46fa9f4daed9fe9d76ee/tomlkit-0.15.1-py3-none-any.whl",
+                    "sha256": "177a05aece5a8ca5266fd3c448abb47b8d352f09d477d3ca8332db4d89b24304",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "tomlkit",
+                        "packagetype": "bdist_wheel"
+                    }
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/man/man1"
+            ]
+        },
+        {
+            "name": "python3-pygit2",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pygit2\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/9c/11/592cc7854795830a7257ab6025a1fc803b58b0e7bf7d31f619bc7288ed4d/pygit2-1.20.1.tar.gz",
+                    "sha256": "36dff84d237f2b8f18b0b146d6e7c3f99a7bce2da98cc4103a14387f53319f95",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "pygit2"
+                    }
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/man/man1"
+            ],
+            "modules": [
+                {
+                    "name": "python3-cffi",
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"cffi\" --no-build-isolation"
+                    ],
+                    "sources": [
+                        {
+                            "type": "file",
+                            "url": "https://files.pythonhosted.org/packages/9e/ef/008a1939e372c06329a3fce4279c02f328488f3526744906eeec3da7ad5f/cffi-2.1.1.tar.gz",
+                            "sha256": "dd31f52ea1086513bb9df30f8fcee9b8918323ae067a3d5b78bc826a000712be",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "cffi"
+                            }
+                        }
+                    ],
+                    "cleanup": [
+                        "/bin",
+                        "/share/man/man1"
+                    ],
+                    "modules": [
+                        {
+                            "name": "python3-pycparser",
+                            "buildsystem": "simple",
+                            "build-commands": [
+                                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pycparser\" --no-build-isolation"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "file",
+                                    "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+                                    "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992",
+                                    "x-checker-data": {
+                                        "type": "pypi",
+                                        "name": "pycparser",
+                                        "packagetype": "bdist_wheel"
+                                    }
+                                }
+                            ],
+                            "cleanup": [
+                                "/bin",
+                                "/share/man/man1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "libgit2",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DCMAKE_C_FLAGS=\"-O2\"",
+                        "-DCMAKE_CXX_FLAGS=\"-O2\"",
+                        "-DCMAKE_INSTALL_LIBDIR=lib"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/libgit2/libgit2/archive/v1.9.7.tar.gz",
+                            "sha256": "1a4fbe7589e814777ae76b64734ad80f4ecad22cd33a22682a2aaea4ae5375e7",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 1627,
+                                "stable-only": true,
+                                "url-template": "https://github.com/libgit2/libgit2/archive/v$version.tar.gz"
+                            }
+                        }
+                    ],
+                    "cleanup": [
+                        "/bin",
+                        "/include",
+                        "/lib/pkgconfig"
+                    ]
+                }
             ]
         }
     ]

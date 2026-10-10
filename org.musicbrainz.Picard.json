@@ -1,7 +1,7 @@
 {
     "id": "org.musicbrainz.Picard",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-25.08",
+    "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
     "command": "picard",
     "finish-args": [
@@ -31,11 +31,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/0d/9d/5179b8e619fe084218a87f963f1648cba4c5aa5bb98dd5661d2cbb9eb1e4/pyqt5_sip-12.19.0.tar.gz",
-                    "sha256": "71cacf1879da2cd3e50cb239e21673cfe02d358af70ab6768817c960428868c3",
+                    "url": "https://files.pythonhosted.org/packages/78/35/bed43ff7cf040ced6b62a17b272abecb94914755284b54e8d06844e1ed23/pyqt6_sip-13.13.0.tar.gz",
+                    "sha256": "2cd55f575cde208c398d6cfdecc5a13394ed2afb54226210c50e3a6df7c3a997",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "pyqt5-sip"
+                        "name": "pyqt6-sip"
                     }
                 }
             ]
@@ -70,11 +70,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/0e/07/c9ed0bd428df6f87183fca565a79fee19fa7c88c7f00a7f011ab4379e77a/PyQt5-5.15.11.tar.gz",
-                    "sha256": "fda45743ebb4a27b4b1a51c6d8ef455c4c1b5d610c90d2934c7802b5c1557c52",
+                    "url": "https://files.pythonhosted.org/packages/8b/47/b25c13eca5bebc6505394d0223e46d7ebf0c57dcac2ed908d7d19b18ab6b/pyqt6-6.11.0.tar.gz",
+                    "sha256": "45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "pyqt5"
+                        "name": "pyqt6"
                     }
                 },
                 {
@@ -127,6 +127,10 @@
         {
             "name": "libdiscid",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_INSTALL_LIBDIR=lib",
+                "-DENABLE_USE_HTTPS=ON"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -145,89 +149,25 @@
                 "/lib/pkgconfig"
             ]
         },
-        {
-            "name": "rsgain",
-            "buildsystem": "cmake-ninja",
-            "build-options": {
-                "ldflags": "-lpthread",
-                "cxxflags": "-lpthread"
-            },
-            "cleanup": [
-                "/share"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/complexlogic/rsgain/releases/download/v3.6/rsgain-3.6-source.tar.xz",
-                    "sha256": "26d46f1240a83366e82cbc9121a467fc1dcc977c7adfb4e15c99ead6b3d07ec8",
-                    "x-checker-data": {
-                        "type": "json",
-                        "url": "https://api.github.com/repos/complexlogic/rsgain/releases/latest",
-                        "version-query": ".tag_name",
-                        "url-query": ".assets[] | select(.name==\"rsgain-\" + $version + \"-source.taz.xz\") | .browser_download_url"
-                    }
-                }
-            ],
-            "modules": [
-                {
-                    "name": "libebur128",
-                    "buildsystem": "cmake-ninja",
-                    "cleanup": [
-                        "/include",
-                        "/lib/pkgconfig"
-                    ],
-                    "config-opts": [
-                        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/jiixyj/libebur128/archive/refs/tags/v1.2.6.tar.gz",
-                            "sha256": "baa7fc293a3d4651e244d8022ad03ab797ca3c2ad8442c43199afe8059faa613"
-                        }
-                    ]
-                },
-                {
-                    "name": "inih",
-                    "buildsystem": "meson",
-                    "cleanup": [
-                        "/include",
-                        "/lib/pkgconfig"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/benhoyt/inih/archive/refs/tags/r62.tar.gz",
-                            "sha256": "9c15fa751bb8093d042dae1b9f125eb45198c32c6704cd5481ccde460d4f8151",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 11600,
-                                "stable-only": true,
-                                "url-template": "https://github.com/benhoyt/inih/archive/refs/tags/r$version.tar.gz"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
+        "files/rsgain.json",
         "files/python3-deps.json",
-        "files/python3-aubio.json",
+        "files/python3-plugin-deps.json",
         {
             "name": "picard",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --compile --config-settings=\"--global-option=build --disable-autoupdate --localedir=${FLATPAK_DEST}/share/locale\" --no-build-isolation --prefix=${FLATPAK_DEST} --verbose ."
+                "pip3 install --compile --config-settings=\"--global-option=build --disable-autoupdate\" --no-build-isolation --prefix=${FLATPAK_DEST} --verbose ."
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/metabrainz/picard.git",
-                    "tag": "release-2.13.3",
-                    "commit": "8a062c9a7c103e1abed485e62f75bdc332753311",
+                    "type": "archive",
+                    "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-3.0.1.tar.gz",
+                    "sha256": "a18fea920b3a76d337460f25a7b27673742f8c482306e63b884d9cfba524b338",
                     "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^release-([\\d.]+)$",
-                        "is-main-source": true
+                        "type": "anitya",
+                        "project-id": 3633,
+                        "stable-only": true,
+                        "url-template": "https://github.com/metabrainz/picard/releases/download/release-$version/picard-$version.tar.gz"
                     }
                 }
             ]

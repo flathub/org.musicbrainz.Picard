@@ -1,0 +1,69 @@
+{
+    "name": "rsgain",
+    "buildsystem": "cmake-ninja",
+    "build-options": {
+        "ldflags": "-lpthread",
+        "cxxflags": "-lpthread"
+    },
+    "cleanup": [
+        "/share"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/complexlogic/rsgain/releases/download/v3.8/rsgain-3.8-source.tar.xz",
+            "sha256": "0c590fa8ecd084e181dca6d4776f29d532d36c53cb8fde56f87f1270ce45a3cd",
+            "x-checker-data": {
+                "type": "json",
+                "url": "https://api.github.com/repos/complexlogic/rsgain/releases/latest",
+                "version-query": ".tag_name",
+                "url-query": ".assets[] | select(.name==\"rsgain-\" + $version + \"-source.taz.xz\") | .browser_download_url"
+            }
+        }
+    ],
+    "modules": [
+        {
+            "name": "libebur128",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+                "-DCMAKE_INSTALL_LIBDIR=lib"
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/jiixyj/libebur128/archive/refs/tags/v1.2.6.tar.gz",
+                    "sha256": "baa7fc293a3d4651e244d8022ad03ab797ca3c2ad8442c43199afe8059faa613"
+                }
+            ]
+        },
+        {
+            "name": "inih",
+            "buildsystem": "meson",
+            "config-opts": [
+                "--libdir=lib"
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r62.tar.gz",
+                    "sha256": "9c15fa751bb8093d042dae1b9f125eb45198c32c6704cd5481ccde460d4f8151",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 11600,
+                        "stable-only": true,
+                        "url-template": "https://github.com/benhoyt/inih/archive/refs/tags/r$version.tar.gz"
+                    }
+                }
+            ]
+        }
+    ]
+}
