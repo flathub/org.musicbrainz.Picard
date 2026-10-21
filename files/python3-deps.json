@@ -170,8 +170,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/75/e6/1c7b7a48aa3f2c2a5d3c71a6c9c90a6c8c2903e5c73663b5f5e38f87257f/markdown-3.11.1-py3-none-any.whl",
-                    "sha256": "f1fa378ba5d682900c9ecb55ccceacca936016dda7c3b27097e8ae03ff78feb5",
+                    "url": "https://files.pythonhosted.org/packages/fe/66/bcab3b677b71ad286b4e607e3427499537c76e13ad2e22584ba7a7d9882c/markdown-3.11.2-py3-none-any.whl",
+                    "sha256": "f80390747a2a0ff2ba54da074ce4f862f72a6685f608cd2637b646a6d83993f5",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "Markdown",
