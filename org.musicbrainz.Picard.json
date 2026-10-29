@@ -70,8 +70,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/8b/47/b25c13eca5bebc6505394d0223e46d7ebf0c57dcac2ed908d7d19b18ab6b/pyqt6-6.11.0.tar.gz",
-                    "sha256": "45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889",
+                    "url": "https://files.pythonhosted.org/packages/8b/77/73ae0fd2ce7915ce87269743fd11f14f009b8db60a58759afc1c402327f2/pyqt6-6.12.0.tar.gz",
+                    "sha256": "d3e021b716bae880224422f9d1b894d2d53de7e60e60dbc43f860723f9cc300b",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt6"
@@ -161,8 +161,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-3.0.2.tar.gz",
-                    "sha256": "ca875d573eb4b898f99821ec32978d9a6b47dc1f96b25f96608a75b6234d6098",
+                    "url": "https://github.com/metabrainz/picard/releases/download/release-3.0.3/picard-3.0.3.tar.gz",
+                    "sha256": "e97f5049495e41b55c0da99ea8506d3d5345936bf348aca1ce34d66ad3b52c03",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3633,
