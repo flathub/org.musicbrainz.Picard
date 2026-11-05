@@ -16,8 +16,8 @@
             "x-checker-data": {
                 "type": "json",
                 "url": "https://api.github.com/repos/complexlogic/rsgain/releases/latest",
-                "version-query": ".tag_name",
-                "url-query": ".assets[] | select(.name==\"rsgain-\" + $version + \"-source.taz.xz\") | .browser_download_url"
+                "version-query": ".tag_name | ltrimstr(\"v\")",
+                "url-query": ".assets[] | select(.name==\"rsgain-\" + $version + \"-source.tar.xz\") | .browser_download_url"
             }
         }
     ],
