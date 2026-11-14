@@ -70,8 +70,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/8b/77/73ae0fd2ce7915ce87269743fd11f14f009b8db60a58759afc1c402327f2/pyqt6-6.12.0.tar.gz",
-                    "sha256": "d3e021b716bae880224422f9d1b894d2d53de7e60e60dbc43f860723f9cc300b",
+                    "url": "https://files.pythonhosted.org/packages/61/5f/39d2cf3eabc36006a5c87df6e1ed34928025b4a1768d752859bf404ec341/pyqt6-6.12.1.tar.gz",
+                    "sha256": "17bb18b3ae953ab54b23026291ecea2579b028597b56c281a752c8ed66dd1a58",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pyqt6"
